@@ -1080,7 +1080,17 @@
     .portrait-wrap{max-width: 340px; margin: 30px auto 0}
     .sec-head{grid-template-columns: 1fr; gap: 18px}
     .about-grid{grid-template-columns: 1fr; gap: 40px}
-    .about-shape{aspect-ratio: 4/3; max-width: 460px; margin-inline:auto}
+    .about-shape{
+      position: static;
+      top: auto;
+      aspect-ratio: auto;
+      max-height: none;
+      max-width: 460px;
+      margin-inline:auto;
+      padding: 28px;
+    }
+    .about-shape h3{font-size: 1.6rem; margin-bottom: 20px}
+    .about-shape ul{font-size: 1rem; gap: 10px}
     .consult-grid{grid-template-columns: 1fr}
     .media-grid{grid-template-columns: 1fr 1fr}
     .media-card.tall{grid-row: auto; aspect-ratio: 16/10}
