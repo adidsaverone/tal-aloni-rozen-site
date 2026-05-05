@@ -37,8 +37,9 @@
 
   --radius:6px;
   --radius-lg:18px;
-  --shadow-soft:0 2px 8px rgba(23,26,38,.04), 0 18px 50px -22px rgba(23,26,38,.18);
-  --shadow-pop:0 12px 40px -12px rgba(255,35,82,.35);
+  --shadow-soft:0 1px 2px rgba(23,26,38,.04), 0 24px 60px -28px rgba(23,26,38,.16);
+  --shadow-card:0 1px 3px rgba(23,26,38,.04), 0 8px 24px -8px rgba(23,26,38,.08);
+  --shadow-pop:0 10px 30px -10px rgba(255,35,82,.32);
   --ease:cubic-bezier(.2,.7,.2,1);
 
   --max:1240px;
@@ -327,7 +328,7 @@ body.menu-open .mobile-menu{
 .section-head{
   display:flex;align-items:flex-end;justify-content:space-between;
   gap:40px;flex-wrap:wrap;
-  margin-bottom:64px;
+  margin-bottom:56px;
 }
 .section-tag{
   font-family:var(--ui);font-size:12px;font-weight:700;
@@ -342,12 +343,12 @@ body.menu-open .mobile-menu{
 .section-ink .section-tag::before{background:#c8c9d2}
 .section-title{
   font-family:var(--display);
-  font-size:clamp(34px, 4.4vw, 60px);
-  line-height:1.04;
+  font-size:clamp(30px, 3.6vw, 48px);
+  line-height:1.08;
   letter-spacing:-.012em;
   margin:0;
   color:var(--ink);
-  max-width:740px;
+  max-width:680px;
   font-weight:400;
 }
 .section-ink .section-title{color:var(--paper)}
@@ -363,12 +364,18 @@ body.menu-open .mobile-menu{
   z-index:-1;border-radius:2px;
 }
 .section-lede{
-  font-size:19px;line-height:1.55;color:var(--ink-3);
-  max-width:420px;margin:0;font-weight:400;
+  font-size:17px;line-height:1.6;color:var(--ink-3);
+  max-width:380px;margin:0;font-weight:400;
 }
 .section-ink .section-lede{color:#c8c9d2}
 
 /* ─────────── about ─────────── */
+.about-shell{
+  background:linear-gradient(160deg, #ffffff 0%, var(--blush) 100%);
+  border-radius:32px;
+  padding:80px 72px;
+  box-shadow:0 1px 2px rgba(23,26,38,.04), 0 30px 80px -40px rgba(23,26,38,.18);
+}
 .about-grid{
   display:grid;
   grid-template-columns: 1fr 1.4fr;
@@ -456,26 +463,27 @@ body.menu-open .mobile-menu{
 
 /* ─────────── why card ─────────── */
 .why-card{
-  background:linear-gradient(160deg, var(--snow), var(--blush));
-  border:1px solid var(--line);
-  border-radius:var(--radius-lg);
-  padding:48px 56px;
-  max-width:840px;margin:0 auto;
+  background:#ffffff;
+  border:0;
+  border-radius:32px;
+  padding:60px 72px;
+  max-width:880px;margin:0 auto;
   position:relative;
+  box-shadow:var(--shadow-card);
 }
 .why-card::before{
-  content:'';position:absolute;top:0;inset-inline-end:0;
-  width:6px;height:100%;background:var(--red);
-  border-radius:0 var(--radius-lg) var(--radius-lg) 0;
+  content:'';position:absolute;top:32px;inset-inline-end:32px;
+  width:36px;height:3px;background:var(--red);
+  border-radius:2px;
 }
 .why-card .section-tag{margin-bottom:20px}
 .why-card p{
-  font-family:var(--display);
-  font-size:22px;line-height:1.5;color:var(--ink);
+  font-family:var(--sans);
+  font-size:19px;line-height:1.7;color:var(--ink-2);
   margin:0 0 16px;font-weight:400;
 }
 .why-card p:last-child{margin-bottom:0}
-.why-card p strong{color:var(--ink);font-weight:700}
+.why-card p strong{color:var(--ink);font-weight:600}
 @media (max-width:960px){
   .why-card{padding:32px 24px}
   .why-card p{font-size:18px}
@@ -486,9 +494,9 @@ body.menu-open .mobile-menu{
   display:grid;
   grid-template-columns: 1fr 1fr;
   background:var(--snow);
-  border-radius:var(--radius-lg);
+  border-radius:32px;
   overflow:hidden;
-  box-shadow:var(--shadow-soft);
+  box-shadow:var(--shadow-card);
   margin-bottom:40px;
 }
 .flagship-cover{
@@ -512,7 +520,7 @@ body.menu-open .mobile-menu{
 }
 .flagship-cover h3{
   font-family:var(--display);
-  font-size:48px;line-height:1.05;margin:0;
+  font-size:40px;line-height:1.08;margin:0;
   font-weight:400;
 }
 .flagship-cover .sub{font-size:16px;opacity:.92;line-height:1.55;margin-top:14px;max-width:340px}
@@ -541,15 +549,15 @@ body.menu-open .mobile-menu{
 }
 .topic-card{
   background:var(--snow);
-  border:1px solid var(--line);
-  border-radius:var(--radius-lg);
-  padding:32px 28px;
-  transition:transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
+  border:0;
+  border-radius:24px;
+  padding:36px 30px;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
   position:relative;overflow:hidden;
+  box-shadow:var(--shadow-card);
 }
 .topic-card:hover{
   transform:translateY(-6px);
-  border-color:var(--red);
   box-shadow:var(--shadow-soft);
 }
 .topic-card .num{
@@ -575,7 +583,8 @@ body.menu-open .mobile-menu{
 
 .lecture-cta-row{
   margin-top:48px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;
-  padding:32px;background:var(--snow);border-radius:var(--radius-lg);
+  padding:36px;background:var(--snow);border-radius:24px;
+  box-shadow:var(--shadow-card);
 }
 .lecture-cta-row .icon{
   width:56px;height:56px;border-radius:50%;
@@ -594,15 +603,16 @@ body.menu-open .mobile-menu{
   gap:24px;
 }
 .consult-card{
-  background:var(--paper);
-  border-radius:var(--radius-lg);
+  background:var(--snow);
+  border-radius:24px;
   padding:0;
   overflow:hidden;
   display:flex;flex-direction:column;
   position:relative;
-  transition:transform .3s var(--ease);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  box-shadow:var(--shadow-card);
 }
-.consult-card:hover{transform:translateY(-6px)}
+.consult-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-soft)}
 .consult-card .head{
   padding:32px 32px 28px;
   border-bottom:1px solid rgba(0,0,0,.08);
@@ -614,7 +624,7 @@ body.menu-open .mobile-menu{
 }
 .consult-card .head h3{
   font-family:var(--display);
-  font-size:30px;line-height:1.1;margin:0;color:var(--ink);font-weight:400;
+  font-size:26px;line-height:1.15;margin:0;color:var(--ink);font-weight:400;
 }
 .consult-card .body{
   padding:28px 32px 32px;flex:1;
@@ -645,9 +655,9 @@ body.menu-open .mobile-menu{
 }
 .consult-card .body .more:hover{color:var(--red)}
 
-.consult-card.c-org{background:linear-gradient(160deg, #ffffff, #fdf3ed)}
-.consult-card.c-small{background:linear-gradient(160deg, #ffffff, #fdf0ee)}
-.consult-card.c-sport{background:linear-gradient(160deg, #ffffff, #f4ede0)}
+.consult-card.c-org{background:#ffffff}
+.consult-card.c-small{background:#ffffff}
+.consult-card.c-sport{background:#ffffff}
 
 .consult-card .marker{
   position:absolute;top:28px;inset-inline-end:28px;
@@ -659,8 +669,8 @@ body.menu-open .mobile-menu{
 .ecosystem-block{
   background:var(--ink);
   color:#fff;
-  border-radius:32px;
-  padding:80px 60px;
+  border-radius:36px;
+  padding:80px 64px;
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:64px;align-items:center;
@@ -737,13 +747,14 @@ body.menu-open .mobile-menu{
   gap:24px;
 }
 .media-card{
-  border-radius:var(--radius-lg);
+  border-radius:24px;
   overflow:hidden;
   background:var(--snow);
-  box-shadow:var(--shadow-soft);
-  transition:transform .3s var(--ease);
+  box-shadow:var(--shadow-card);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
   display:flex;flex-direction:column;
 }
+.media-card:hover{box-shadow:var(--shadow-soft)}
 .media-card:hover{transform:translateY(-6px)}
 .media-thumb{
   position:relative;
@@ -788,11 +799,19 @@ body.menu-open .mobile-menu{
 
 /* ─────────── logos marquee ─────────── */
 .logos-section{
-  padding:80px 0;background:var(--snow);
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:80px 28px;background:transparent;
+  border:0;
+}
+.logos-shell{
+  background:var(--snow);
+  border-radius:32px;
+  padding:60px 0;
+  max-width:var(--max);margin:0 auto;
+  box-shadow:var(--shadow-card);
+  overflow:hidden;
 }
 .logos-head{
-  text-align:center;margin-bottom:40px;padding:0 28px;
+  text-align:center;margin-bottom:36px;padding:0 28px;
 }
 .logos-head .section-tag{justify-content:center;display:inline-flex}
 .logos-head h3{
@@ -813,13 +832,14 @@ body.menu-open .mobile-menu{
 }
 .logo-item{
   font-family:var(--display);
-  font-size:26px;color:var(--ink-3);
+  font-size:24px;color:var(--ink-3);
   white-space:nowrap;
-  padding:14px 24px;border:1.5px solid var(--line);border-radius:14px;
+  padding:14px 28px;border:0;border-radius:999px;
+  background:var(--paper);
   font-weight:400;letter-spacing:-.005em;
-  transition:color .2s var(--ease), border-color .2s var(--ease);
+  transition:color .2s var(--ease), background .2s var(--ease);
 }
-.logo-item:hover{color:var(--ink);border-color:var(--ink)}
+.logo-item:hover{color:var(--ink);background:var(--blush)}
 
 /* ─────────── testimonials ─────────── */
 .testimonials-grid{
@@ -829,10 +849,10 @@ body.menu-open .mobile-menu{
 }
 .testimonial{
   background:var(--snow);
-  border-radius:var(--radius-lg);
-  padding:36px 36px 32px;
+  border-radius:24px;
+  padding:40px 36px 32px;
   position:relative;
-  border:1px solid var(--line);
+  box-shadow:var(--shadow-card);
 }
 .testimonial::before{
   content:'״';
@@ -864,8 +884,8 @@ body.menu-open .mobile-menu{
 /* ─────────── contact ─────────── */
 .contact-block{
   background:var(--ink);color:#fff;
-  border-radius:32px;
-  padding:80px 60px;
+  border-radius:36px;
+  padding:80px 64px;
   display:grid;
   grid-template-columns:1fr 1.2fr;
   gap:80px;align-items:start;
@@ -930,23 +950,23 @@ body.menu-open .mobile-menu{
 }
 .field input,.field select,.field textarea{
   width:100%;
-  padding:14px 16px;
+  padding:16px 18px;
   font-family:var(--sans);font-size:15px;
-  background:var(--paper);
-  border:1px solid var(--line);
-  border-radius:12px;
+  background:#f6f3ec;
+  border:0;
+  border-radius:14px;
   color:var(--ink);
-  transition:border-color .2s var(--ease), background .2s var(--ease);
+  transition:background .2s var(--ease), box-shadow .2s var(--ease);
   -webkit-appearance:none;appearance:none;
 }
 .field select{
-  background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23171a26' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") left 18px center/14px no-repeat;
-  padding-inline-start:42px;
+  background:#f6f3ec url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23171a26' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") left 18px center/14px no-repeat;
+  padding-inline-start:44px;
   cursor:pointer;
 }
-.field textarea{min-height:110px;resize:vertical}
+.field textarea{min-height:120px;resize:vertical}
 .field input:focus,.field select:focus,.field textarea:focus{
-  outline:none;border-color:var(--red);background:#fff;
+  outline:none;background:#fff;box-shadow:inset 0 0 0 1.5px var(--red);
 }
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .contact-form .submit{
@@ -1083,6 +1103,7 @@ footer{
   .section-title{font-size:clamp(30px, 7vw, 42px)}
   .section-lede{font-size:16.5px}
 
+  .about-shell{padding:48px 28px;border-radius:24px}
   .about-grid{grid-template-columns:1fr;gap:60px}
   .about-portrait{max-width:300px;margin:0 auto 50px}
   .about-portrait .stamp{width:88px;height:88px;inset-inline-start:auto;inset-inline-end:-8px;bottom:-28px}
@@ -1207,8 +1228,9 @@ footer{
     </p>
   </div>
 
+  <div class="about-shell reveal">
   <div class="about-grid">
-    <div class="about-portrait reveal">
+    <div class="about-portrait">
       <div class="stack">
         <div class="stripe"></div>
         <div class="photo">
@@ -1221,7 +1243,7 @@ footer{
       </div>
     </div>
 
-    <div class="about-text reveal">
+    <div class="about-text">
       <h2>שלום, אני ד״ר טל אלוני רוזן.</h2>
       <p>
         אני <strong>מרצה, יועצת וחוקרת</strong>, שמאמינה ששיווק טוב לא נמדד רק במספרים, אלא בקשרים שהוא בונה, בקהילות שהוא יוצר ומחבר, ובשינויים שהוא מצליח להוביל.
@@ -1242,6 +1264,7 @@ footer{
         כי מבחינתי — שיווק הוא לא מה שנאמר אלא מה שנעשה בפועל, הלכה למעשה.
       </div>
     </div>
+  </div>
   </div>
 </section>
 
@@ -1513,7 +1536,8 @@ footer{
 
 <!-- ─────────── LOGOS ─────────── -->
 <section class="logos-section">
-  <div class="logos-head reveal">
+  <div class="logos-shell reveal">
+  <div class="logos-head">
     <div class="section-tag">הם בחרו לעבוד איתי</div>
     <h3>גופים ציבוריים, פרויקטים לאומיים ואקדמיה.</h3>
   </div>
@@ -1534,6 +1558,7 @@ footer{
       <span class="logo-item">פרויקט שווים בספורט</span>
       <span class="logo-item">איגוד הרוגבי</span>
     </div>
+  </div>
   </div>
 </section>
 
