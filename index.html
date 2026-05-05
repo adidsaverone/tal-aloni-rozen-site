@@ -1,1688 +1,1823 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="he" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ד״ר טל אלוני רוזן · מחברת בין אסטרטגיה לערכים</title>
-<meta name="description" content="ד״ר טל אלוני רוזן — יועצת אסטרטגית לחברות ולעסקים, מרצה באקדמיה ולארגונים, חוקרת שיווק, שיווק ספורט והתנהגות צרכנים." />
-<meta name="theme-color" content="#fbf3e7" />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Rubik:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ד״ר טל אלוני רוזן · אסטרטגיה, שיווק, ערכים</title>
+<meta name="description" content="ד״ר טל אלוני רוזן — מרצה, יועצת וחוקרת. שיווק שמחבר אסטרטגיה לערכים, מאקדמיה למגרש, מהמותג לקהילה.">
+<meta name="theme-color" content="#fbfaf7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23FF2352'/><text x='32' y='44' text-anchor='middle' font-family='serif' font-size='34' fill='%23fff' font-weight='900'>ט</text></svg>">
 
 <style>
-  /* ───────── Tokens ───────── */
-  :root{
-    --paper:        #fbf3e7;
-    --paper-soft:   #f4e7ce;
-    --paper-deep:   #ecdcb9;
-    --ink:          #16130d;
-    --ink-soft:     #3a342a;
-    --rule:         #16130d22;
-    --rule-strong:  #16130d55;
-    --red:          #ff2352;
-    --red-deep:     #da0c1a;
-    --red-blood:    #8c0610;
-    --red-haze:     #ff235214;
+/* ─────────── tokens ─────────── */
+:root{
+  --paper:#fbfaf7;
+  --snow:#ffffff;
+  --blush:#fde9e6;
+  --blush-deep:#f9d2cd;
+  --peach:#ffe6d6;
+  --sand:#f1ead9;
+  --sage:#dde2d2;
+  --ink:#171a26;
+  --ink-2:#2c3144;
+  --ink-3:#5b6173;
+  --mute:#8a8f9f;
+  --line:#e6e1d6;
+  --red:#FF2352;
+  --red-deep:#e0103e;
+  --red-soft:#ffd3dd;
+  --gold:#b9863a;
 
-    --serif:   "Frank Ruhl Libre", "Frank Ruehl CLM", Georgia, serif;
-    --sans:    "Rubik", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --italic:  "Cormorant Garamond", "Frank Ruhl Libre", Georgia, serif;
+  --display:'Suez One', 'Frank Ruhl Libre', Georgia, serif;
+  --sans:'Assistant', 'Heebo', system-ui, sans-serif;
+  --ui:'Heebo','Assistant', system-ui, sans-serif;
 
-    --shadow-card: 0 1px 0 var(--rule), 0 30px 60px -40px #16130d40;
-    --ease: cubic-bezier(.2,.8,.2,1);
-  }
+  --radius:6px;
+  --radius-lg:18px;
+  --shadow-soft:0 2px 8px rgba(23,26,38,.04), 0 18px 50px -22px rgba(23,26,38,.18);
+  --shadow-pop:0 12px 40px -12px rgba(255,35,82,.35);
+  --ease:cubic-bezier(.2,.7,.2,1);
 
-  /* ───────── Reset ───────── */
-  *,*::before,*::after{box-sizing:border-box}
-  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
-  body{
-    margin:0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-weight: 400;
-    font-size: clamp(15px, 0.55vw + 13px, 18px);
-    line-height: 1.65;
-    letter-spacing: -0.005em;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-  body::before{
-    /* paper grain */
-    content:"";
-    position:fixed; inset:0;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.086  0 0 0 0 0.075  0 0 0 0 0.05  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-    background-size: 220px 220px;
-    pointer-events:none;
-    mix-blend-mode: multiply;
-    opacity: .55;
-    z-index: 1;
-  }
-  img{max-width:100%; display:block}
-  a{color:inherit; text-decoration:none}
-  button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
-  ::selection{background: var(--red); color: var(--paper)}
+  --max:1240px;
+}
 
-  /* ───────── Scroll progress ───────── */
-  .scroll-bar{
-    position:fixed; top:0; inset-inline-start:0; height:2px; width:0;
-    background: var(--red);
-    z-index: 1000;
-    transition: width .08s linear;
-  }
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--red);color:#fff}
 
-  /* ───────── Layout ───────── */
-  .wrap{
-    width:min(1280px, 92vw);
-    margin-inline:auto;
-    position:relative;
-    z-index:2;
-  }
-  section{position:relative; z-index:2}
+/* ─────────── nav ─────────── */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,250,247,.85);
+  backdrop-filter:saturate(160%) blur(14px);
+  -webkit-backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s var(--ease), background .3s var(--ease);
+}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav-row{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:14px 28px;
+  display:flex;align-items:center;gap:24px;
+}
+.brand{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--display);
+  font-size:18px;
+  letter-spacing:-.005em;
+  color:var(--ink);
+}
+.brand-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--red);
+  box-shadow:0 0 0 4px rgba(255,35,82,.14);
+}
+.nav-menu{
+  display:flex;gap:6px;margin-inline-start:auto;align-items:center;
+  font-family:var(--ui);
+  font-size:15px;font-weight:500;
+  color:var(--ink-2);
+}
+.nav-menu a{
+  padding:9px 14px;border-radius:999px;
+  position:relative;transition:color .2s var(--ease), background .2s var(--ease);
+}
+.nav-menu a:hover{color:var(--red);background:rgba(255,35,82,.06)}
+.nav-cta{
+  margin-inline-start:8px;
+  background:var(--ink);color:var(--snow)!important;
+  padding:11px 18px!important;border-radius:999px;
+  font-weight:600;
+}
+.nav-cta:hover{background:var(--red);color:var(--snow)!important}
+.menu-btn{
+  display:none;
+  width:42px;height:42px;border-radius:12px;
+  border:1px solid var(--line);
+  margin-inline-start:auto;
+  align-items:center;justify-content:center;
+  background:var(--snow);
+}
+.menu-btn span{
+  position:relative;width:18px;height:2px;background:var(--ink);
+  display:block;transition:transform .25s var(--ease);
+}
+.menu-btn span::before,.menu-btn span::after{
+  content:'';position:absolute;left:0;width:18px;height:2px;background:var(--ink);
+  transition:transform .25s var(--ease), top .25s var(--ease);
+}
+.menu-btn span::before{top:-6px}
+.menu-btn span::after{top:6px}
+body.menu-open .menu-btn span{background:transparent}
+body.menu-open .menu-btn span::before{top:0;transform:rotate(45deg)}
+body.menu-open .menu-btn span::after{top:0;transform:rotate(-45deg)}
 
-  /* ───────── Header ───────── */
-  .nav{
-    position: sticky; top:0; z-index: 50;
-    background: color-mix(in srgb, var(--paper) 88%, transparent);
-    backdrop-filter: blur(10px) saturate(1.05);
-    -webkit-backdrop-filter: blur(10px) saturate(1.05);
-    border-bottom: 1px solid var(--rule);
-  }
-  .nav-inner{
-    display:flex; align-items:center; justify-content:space-between;
-    gap: 2rem;
-    padding: 18px 0;
-  }
-  .brandmark{
-    display:flex; align-items:center; gap: 12px;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 1.15rem;
-    letter-spacing: .02em;
-  }
-  .brandmark .stamp{
-    width: 38px; height: 38px;
-    border: 1.5px solid var(--ink);
-    border-radius: 999px;
-    display:grid; place-items:center;
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: .85rem;
-    letter-spacing: -.02em;
-    color: var(--red);
-    background: var(--paper);
-    transform: rotate(-6deg);
-  }
-  .brandmark b{font-weight:600; color: var(--ink)}
+/* mobile nav drawer */
+.mobile-menu{
+  position:fixed;inset:0;
+  background:var(--paper);
+  padding:96px 28px 40px;
+  z-index:48;
+  display:flex;flex-direction:column;gap:4px;
+  visibility:hidden;opacity:0;
+  transition:opacity .3s var(--ease), visibility 0s linear .3s;
+  overflow-y:auto;
+}
+body.menu-open{overflow:hidden}
+body.menu-open .mobile-menu{
+  visibility:visible;opacity:1;
+  transition:opacity .3s var(--ease), visibility 0s linear 0s;
+}
+.mobile-menu a{
+  font-family:var(--display);
+  font-size:30px;
+  color:var(--ink);
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
+.mobile-menu a:last-of-type{border-bottom:0}
+.mobile-menu .mobile-sub{
+  padding-inline-start:18px;font-size:18px;color:var(--ink-3);
+  font-family:var(--sans);font-weight:500;
+}
+.mobile-menu .wa-mobile{
+  margin-top:24px;background:#25D366;color:#fff;
+  padding:16px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:10px;
+  font-size:17px;font-weight:600;border-bottom:0;font-family:var(--sans);
+}
 
-  .menu{
-    display:flex; align-items:center; gap: 2rem;
-    font-size: .92rem;
-    font-weight: 400;
-  }
-  .menu a{
-    position:relative; padding: 6px 0;
-    color: var(--ink-soft);
-    transition: color .25s var(--ease);
-  }
-  .menu a::after{
-    content:""; position:absolute; inset-inline:0; bottom: 0; height: 2px;
-    background: var(--red);
-    transform: scaleX(0); transform-origin: right;
-    transition: transform .35s var(--ease);
-  }
-  .menu a:hover{color: var(--ink)}
-  .menu a:hover::after{transform: scaleX(1); transform-origin: left}
+/* ─────────── hero ─────────── */
+.hero{
+  position:relative;
+  padding:60px 28px 80px;
+  overflow:hidden;
+}
+.hero-grid{
+  max-width:var(--max);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.hero-eyebrow{
+  font-family:var(--ui);
+  font-size:13px;font-weight:600;
+  color:var(--red);
+  letter-spacing:.16em;
+  display:inline-flex;align-items:center;gap:10px;
+  margin-bottom:20px;
+}
+.hero-eyebrow::before{
+  content:'';width:30px;height:1px;background:var(--red);
+}
+.hero h1{
+  font-family:var(--display);
+  font-size:clamp(42px, 6vw, 84px);
+  line-height:.96;
+  letter-spacing:-.015em;
+  margin:0 0 24px;
+  color:var(--ink);
+  font-weight:400;
+}
+.hero h1 .red-line{
+  display:inline-block;
+  position:relative;
+  color:var(--ink);
+}
+.hero h1 .red-line::after{
+  content:'';position:absolute;
+  inset-inline:-2px; bottom:6px; height:14px;
+  background:var(--red-soft);
+  z-index:-1;
+  border-radius:2px;
+}
+.hero h1 em{
+  font-family:var(--display);
+  font-style:normal;
+  color:var(--red);
+}
+.hero-sub{
+  font-size:20px;
+  line-height:1.55;
+  color:var(--ink-2);
+  max-width:560px;
+  margin:0 0 36px;
+  font-weight:400;
+}
+.hero-sub strong{font-weight:700;color:var(--ink)}
+.hero-cta{
+  display:flex;flex-wrap:wrap;gap:12px;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 26px;border-radius:999px;
+  font-family:var(--ui);font-weight:600;font-size:15.5px;
+  transition:transform .2s var(--ease), background .2s var(--ease), color .2s var(--ease), box-shadow .2s var(--ease);
+  white-space:nowrap;
+}
+.btn-primary{background:var(--red);color:#fff;box-shadow:var(--shadow-pop)}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--red);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+.btn-arrow{
+  display:inline-block;width:18px;height:18px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M19 12H5M11 18l-6-6 6-6'/%3E%3C/svg%3E") center/contain no-repeat;
+}
 
-  .nav-cta{
-    display:inline-flex; align-items:center; gap: 8px;
-    padding: 10px 18px;
-    border: 1.5px solid var(--red);
-    color: var(--red);
-    border-radius: 999px;
-    font-weight: 500;
-    font-size: .9rem;
-    transition: background .25s var(--ease), color .25s var(--ease), transform .25s var(--ease);
-  }
-  .nav-cta:hover{background: var(--red); color: var(--paper); transform: translateY(-1px)}
-  .nav-cta svg{width: 16px; height: 16px}
+.hero-meta{
+  display:flex;gap:22px;margin-top:36px;
+  font-family:var(--ui);font-size:13.5px;color:var(--ink-3);font-weight:500;
+}
+.hero-meta b{color:var(--ink);font-family:var(--display);font-weight:400;font-size:24px;display:block;line-height:1}
+.hero-meta div{display:flex;flex-direction:column;gap:6px}
 
-  .burger{display:none}
-  .mobile-menu{display:none}
+.hero-portrait{
+  position:relative;
+  aspect-ratio: 4/5;
+  max-width:520px;
+  justify-self:end;
+  width:100%;
+}
+.hero-portrait .frame{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg, var(--blush) 0%, var(--peach) 100%);
+  border-radius:240px 240px 24px 24px;
+  overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(255,35,82,.25);
+}
+.hero-portrait img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 20%;
+  filter:saturate(1.05);
+}
+.hero-portrait .badge{
+  position:absolute;
+  top:24px;inset-inline-start:-14px;
+  background:var(--ink);color:#fff;
+  font-family:var(--ui);font-size:12px;font-weight:600;
+  letter-spacing:.1em;
+  padding:10px 16px;border-radius:999px;
+  display:flex;align-items:center;gap:8px;
+  z-index:3;
+  box-shadow:0 12px 30px -8px rgba(0,0,0,.3);
+}
+.hero-portrait .badge::before{
+  content:'';width:6px;height:6px;border-radius:50%;background:var(--red);
+  animation:pulse 2.4s infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,35,82,.7)}
+  60%{box-shadow:0 0 0 8px rgba(255,35,82,0)}
+}
 
-  /* ───────── Hero ───────── */
-  .hero{
-    padding: clamp(40px, 7vw, 96px) 0 clamp(60px, 8vw, 120px);
-    position: relative;
-  }
-  .hero-grid{
-    display: grid;
-    grid-template-columns: 1fr 0.85fr;
-    gap: clamp(30px, 5vw, 72px);
-    align-items: end;
-  }
-  .eyebrow{
-    display:flex; align-items:center; gap: 14px;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 1rem;
-    color: var(--red);
-    letter-spacing: .04em;
-  }
-  .eyebrow .num{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 2.2rem;
-    line-height: 1;
-    color: var(--red);
-  }
-  .eyebrow .line{height:1px; background: var(--red); width: 60px; opacity: .6}
+.hero-portrait .play-bubble{
+  position:absolute;
+  bottom:-22px;inset-inline-end:-22px;
+  width:120px;height:120px;border-radius:50%;
+  background:var(--ink);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  font-family:var(--ui);font-size:11px;font-weight:700;letter-spacing:.16em;
+  z-index:4;
+  box-shadow:0 20px 40px -8px rgba(0,0,0,.4);
+  transition:transform .3s var(--ease), background .3s var(--ease);
+  cursor:pointer;
+}
+.hero-portrait .play-bubble:hover{transform:rotate(-12deg) scale(1.05);background:var(--red)}
+.hero-portrait .play-bubble svg{margin-bottom:2px}
 
-  .hero h1{
-    font-family: var(--serif);
-    font-weight: 900;
-    font-size: clamp(3rem, 8vw, 8rem);
-    line-height: 0.92;
-    letter-spacing: -0.025em;
-    margin: 28px 0 0;
-    color: var(--ink);
-  }
-  .hero h1 .row{display:block; overflow:hidden}
-  .hero h1 .row span{display:inline-block}
-  .hero h1 .accent{
-    color: var(--red);
-    font-family: var(--italic);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 0.6em;
-    letter-spacing: -0.02em;
-    margin-inline-start: 0.2em;
-    vertical-align: 0.2em;
-  }
+.hero-deco-1,.hero-deco-2{
+  position:absolute !important;
+  border-radius:50%;
+  z-index:0;pointer-events:none;
+}
+.hero-deco-1{
+  top:-80px;inset-inline-start:-80px;
+  width:380px;height:380px;
+  background:radial-gradient(circle at center, var(--blush), transparent 65%);
+}
+.hero-deco-2{
+  bottom:-120px;inset-inline-end:-120px;
+  width:420px;height:420px;
+  background:radial-gradient(circle at center, var(--sand), transparent 70%);
+}
+.hero-grid{position:relative;z-index:1}
 
-  .tagline{
-    margin: 36px 0 0;
-    font-family: var(--serif);
-    font-size: clamp(1.25rem, 1.8vw, 1.75rem);
-    line-height: 1.35;
-    max-width: 28ch;
-    position: relative;
-    display: inline-block;
-  }
-  .tagline .underline{
-    position: relative; display:inline-block;
-  }
-  .tagline .underline::after{
-    content:""; position:absolute; inset-inline:-4px; bottom: -10px; height: 12px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'><path d='M2 8 C 40 2, 80 12, 120 6 S 198 4, 198 8' fill='none' stroke='%23ff2352' stroke-width='2.5' stroke-linecap='round'/></svg>");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  .latin-sub{
-    margin-top: 24px;
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    color: var(--ink-soft);
-    line-height: 1.6;
-    max-width: 38ch;
-  }
+/* ─────────── ticker ─────────── */
+.ticker{
+  background:var(--ink);color:#fff;
+  padding:16px 0;
+  overflow:hidden;
+  border-top:1px solid var(--ink-2);
+  border-bottom:1px solid var(--ink-2);
+}
+.ticker-track{
+  display:flex;gap:50px;
+  white-space:nowrap;
+  animation:scroll-x 40s linear infinite;
+  font-family:var(--display);font-size:22px;
+}
+.ticker-track span{display:inline-flex;align-items:center;gap:50px}
+.ticker-track .dot{
+  width:8px;height:8px;border-radius:50%;background:var(--red);flex-shrink:0;
+}
+@keyframes scroll-x{from{transform:translateX(0)} to{transform:translateX(-50%)}}
 
-  .cta-row{
-    display:flex; flex-wrap:wrap; gap: 12px;
-    margin-top: 44px;
-  }
-  .btn{
-    display:inline-flex; align-items:center; gap: 10px;
-    padding: 14px 24px;
-    border-radius: 999px;
-    font-size: .95rem;
-    font-weight: 500;
-    transition: all .25s var(--ease);
-    white-space: nowrap;
-  }
-  .btn-primary{
-    background: var(--red);
-    color: var(--paper);
-    box-shadow: 0 10px 30px -10px var(--red);
-  }
-  .btn-primary:hover{background: var(--red-deep); transform: translateY(-2px); box-shadow: 0 18px 40px -14px var(--red-deep)}
-  .btn-ghost{
-    border: 1.5px solid var(--ink);
-    color: var(--ink);
-  }
-  .btn-ghost:hover{background: var(--ink); color: var(--paper)}
-  .btn-outline{
-    border: 1.5px solid var(--red);
-    color: var(--red);
-  }
-  .btn-outline:hover{background: var(--red); color: var(--paper)}
-  .btn .arrow{transition: transform .3s var(--ease)}
-  .btn:hover .arrow{transform: translateX(-4px)}
+/* ─────────── section base ─────────── */
+.section{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:120px 28px;
+}
+.section-blush{background:var(--blush)}
+.section-sand{background:var(--sand)}
+.section-snow{background:var(--snow)}
+.section-ink{background:var(--ink);color:var(--paper)}
+.section-wide{max-width:none;padding-inline:0}
+.section-wide > .inner{max-width:var(--max);margin:0 auto;padding:120px 28px}
 
-  /* hero portrait collage — circular avatar with offset shapes */
-  .portrait-wrap{
-    position: relative;
-    aspect-ratio: 1/1;
-    max-width: 460px;
-    margin-inline: auto;
-    margin-top: 20px;
-  }
-  /* big offset red disc behind */
-  .portrait-wrap::before{
-    content:""; position:absolute;
-    inset-inline-end: -28px; bottom: -28px;
-    width: 86%; height: 86%;
-    background: var(--red);
-    border-radius: 999px;
-    z-index: 1;
-  }
-  /* small ink ring decoration */
-  .portrait-wrap::after{
-    content:""; position:absolute;
-    inset-inline-start: 6px; top: -10px;
-    width: 46px; height: 46px;
-    border: 1.5px solid var(--ink);
-    border-radius: 999px;
-    z-index: 3;
-  }
-  .portrait-frame{
-    position: relative; z-index: 2;
-    width: 88%;
-    aspect-ratio: 1/1;
-    border-radius: 999px;
-    overflow: hidden;
-    background: var(--paper-soft);
-    box-shadow: 0 30px 80px -30px #16130d80;
-  }
-  .portrait-frame::after{
-    content:""; position:absolute; inset:0;
-    border-radius: 999px;
-    box-shadow: inset 0 0 0 1px #16130d20;
-    pointer-events: none;
-  }
-  .portrait{
-    position: relative;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    filter: contrast(1.02) saturate(0.97);
-  }
-  .portrait-tag{
-    position:absolute; z-index: 4;
-    inset-inline-end: -8px;
-    bottom: 14%;
-    background: var(--paper);
-    border: 1px solid var(--rule-strong);
-    padding: 10px 16px;
-    border-radius: 999px;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: .9rem;
-    color: var(--ink);
-    transform: rotate(-4deg);
-    box-shadow: var(--shadow-card);
-    white-space: nowrap;
-  }
-  .portrait-tag span{color: var(--red); font-weight: 600}
-  /* tiny annotation arrow */
-  .portrait-arrow{
-    position:absolute; z-index: 4;
-    inset-inline-start: -36px; top: 38%;
-    color: var(--red);
-    font-family: var(--italic); font-style: italic;
-    font-size: .85rem;
-    display:flex; align-items:center; gap: 6px;
-    transform: rotate(-8deg);
-  }
-  .portrait-arrow svg{width: 60px; height: 22px}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:40px;flex-wrap:wrap;
+  margin-bottom:64px;
+}
+.section-tag{
+  font-family:var(--ui);font-size:12px;font-weight:700;
+  letter-spacing:.18em;color:var(--red);
+  display:inline-flex;align-items:center;gap:12px;
+  margin-bottom:18px;
+}
+.section-tag::before{
+  content:'';width:32px;height:1px;background:var(--red);
+}
+.section-ink .section-tag{color:var(--red-soft)}
+.section-ink .section-tag::before{background:var(--red-soft)}
+.section-title{
+  font-family:var(--display);
+  font-size:clamp(34px, 4.4vw, 60px);
+  line-height:1.04;
+  letter-spacing:-.012em;
+  margin:0;
+  color:var(--ink);
+  max-width:740px;
+  font-weight:400;
+}
+.section-ink .section-title{color:var(--paper)}
+.section-title em{
+  font-style:normal;color:var(--red);
+}
+.section-lede{
+  font-size:19px;line-height:1.55;color:var(--ink-3);
+  max-width:420px;margin:0;font-weight:400;
+}
+.section-ink .section-lede{color:#c8c9d2}
 
-  /* ───────── Marquee ───────── */
-  .marquee{
-    border-block: 1px solid var(--rule);
-    background: var(--paper-soft);
-    padding: 14px 0;
-    overflow: hidden;
-    position: relative;
-  }
-  .marquee-track{
-    display:flex; gap: 48px;
-    width: max-content;
-    animation: scroll 38s linear infinite;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 1.15rem;
-    color: var(--ink-soft);
-  }
-  .marquee-track span{display:inline-flex; align-items:center; gap: 48px}
-  .marquee-track span::after{content:"✦"; color: var(--red); font-style: normal; font-size: .85em}
-  @keyframes scroll{
-    from{transform: translateX(0)}
-    to{transform: translateX(50%)}
-  }
+/* ─────────── about ─────────── */
+.about-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap:80px;
+  align-items:start;
+}
+.about-portrait{
+  position:relative;
+  aspect-ratio:4/5;
+  max-width:440px;
+}
+.about-portrait .stack{
+  position:relative;height:100%;
+}
+.about-portrait .photo{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg, var(--blush-deep), var(--peach));
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+  z-index:2;
+}
+.about-portrait .photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 22%;
+}
+.about-portrait .stripe{
+  position:absolute;
+  inset-inline-end:-14px;top:24px;bottom:24px;
+  width:24px;background:var(--red);border-radius:24px;z-index:1;
+}
+.about-portrait .stamp{
+  position:absolute;
+  bottom:-30px;inset-inline-start:-30px;
+  width:140px;height:140px;border-radius:50%;
+  background:var(--ink);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:var(--display);text-align:center;line-height:1;
+  z-index:3;box-shadow:var(--shadow-soft);
+}
+.about-portrait .stamp .big{font-size:34px;color:var(--red)}
+.about-portrait .stamp .small{font-size:11px;font-family:var(--ui);font-weight:600;letter-spacing:.12em;margin-top:6px;color:#fff}
 
-  /* ───────── Section header ───────── */
-  .section{
-    padding: clamp(70px, 9vw, 130px) 0;
-    border-top: 1px solid var(--rule);
-  }
-  .sec-head{
-    display:grid;
-    grid-template-columns: 1fr 2.2fr;
-    gap: clamp(24px, 4vw, 64px);
-    align-items: end;
-    margin-bottom: clamp(40px, 5vw, 72px);
-  }
-  .sec-tag{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-    font-size: 1.1rem;
-    letter-spacing: .03em;
-  }
-  .sec-tag .num{
-    display:block;
-    font-size: 4.5rem;
-    line-height: 1;
-    margin-bottom: 6px;
-    color: var(--red);
-  }
-  .sec-title{
-    font-family: var(--serif);
-    font-weight: 700;
-    font-size: clamp(2.2rem, 4.4vw, 4.4rem);
-    line-height: 1;
-    letter-spacing: -.02em;
-    margin: 0;
-  }
-  .sec-title em{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-    font-weight: 500;
-  }
-  .sec-sub{
-    margin: 18px 0 0;
-    max-width: 56ch;
-    color: var(--ink-soft);
-    font-size: 1.05rem;
-  }
+.about-text h2{
+  font-family:var(--display);
+  font-size:clamp(28px, 3vw, 40px);
+  line-height:1.15;
+  margin:0 0 20px;
+  color:var(--ink);
+  font-weight:400;
+}
+.about-text p{
+  font-size:17.5px;line-height:1.75;color:var(--ink-2);
+  margin:0 0 18px;
+}
+.about-text p strong{color:var(--ink);font-weight:700}
+.about-text .pull{
+  font-family:var(--display);
+  font-size:24px;line-height:1.4;
+  color:var(--red);
+  border-inline-start:3px solid var(--red);
+  padding-inline-start:20px;
+  margin:32px 0;
+  font-weight:400;
+}
 
-  /* ───────── About ───────── */
-  .about-grid{
-    display:grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: clamp(40px, 6vw, 96px);
-    align-items: start;
-  }
-  .about-shape{
-    position: relative;
-    background: var(--ink);
-    color: var(--paper);
-    padding: 36px;
-    overflow: hidden;
-  }
-  @media (min-width: 961px){
-    .about-shape{
-      aspect-ratio: 4/5;
-      max-height: 560px;
-      position: sticky;
-      top: 100px;
-    }
-  }
-  .about-shape::before{
-    content:""; position:absolute;
-    inset-inline-start: -40%; top: -10%;
-    width: 140%; height: 60%;
-    background: var(--red);
-    transform: rotate(-12deg);
-    z-index: 0;
-  }
-  .about-shape > *{position: relative; z-index:1}
-  .about-shape .label{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--paper);
-    opacity: .9;
-    font-size: 1.1rem;
-    margin-bottom: 16px;
-  }
-  .about-shape h3{
-    font-family: var(--serif);
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
-    line-height: 1.05;
-    margin: 0 0 28px;
-    color: var(--paper);
-  }
-  .about-shape ul{
-    list-style: none; padding: 0; margin: 0;
-    display:flex; flex-direction: column; gap: 14px;
-    font-family: var(--serif);
-    font-size: 1.15rem;
-  }
-  .about-shape li{
-    display:flex; align-items:baseline; gap: 12px;
-  }
-  .about-shape li::before{
-    content:"—"; color: var(--red); font-weight: 700;
-  }
+.about-credits{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+  padding-top:32px;
+  border-top:1px solid var(--line);
+}
+.about-credit{
+  font-family:var(--ui);
+}
+.about-credit .num{
+  font-family:var(--display);
+  color:var(--red);font-size:30px;line-height:1;
+}
+.about-credit .label{
+  font-size:13px;color:var(--ink-3);font-weight:500;margin-top:8px;
+  display:block;
+}
 
-  .about-text p{
-    font-family: var(--serif);
-    font-size: clamp(1.05rem, 1.2vw, 1.2rem);
-    line-height: 1.75;
-    margin: 0 0 22px;
-  }
-  .about-text p.lead{
-    font-family: var(--serif);
-    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-    line-height: 1.5;
-    color: var(--ink);
-    margin-bottom: 32px;
-  }
-  .pull-quote{
-    margin: 56px 0 0;
-    padding: 32px 40px;
-    border-inline-start: 3px solid var(--red);
-    background: var(--paper-soft);
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: clamp(1.4rem, 2vw, 1.9rem);
-    line-height: 1.45;
-    color: var(--ink);
-    position: relative;
-  }
-  .pull-quote::before{
-    content:"”";
-    position:absolute;
-    inset-inline-end: 24px; top: -10px;
-    font-family: var(--serif);
-    font-size: 5rem;
-    line-height: 1;
-    color: var(--red);
-  }
-  .pull-quote cite{
-    display:block; margin-top: 16px;
-    font-family: var(--sans);
-    font-style: normal;
-    font-size: .9rem;
-    color: var(--ink-soft);
-    letter-spacing: .04em;
-  }
-  .pull-quote cite::before{content:"— "}
+/* ─────────── lectures ─────────── */
+.lectures-flagship{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background:var(--snow);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+  margin-bottom:40px;
+}
+.flagship-cover{
+  background:
+    linear-gradient(135deg, rgba(23,26,38,.7), rgba(255,35,82,.4)),
+    url("https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80") center/cover;
+  padding:48px;
+  color:#fff;
+  display:flex;flex-direction:column;justify-content:space-between;
+  min-height:380px;
+  position:relative;
+}
+.flagship-cover .pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.3);
+  padding:8px 14px;border-radius:999px;
+  font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+  width:fit-content;
+  backdrop-filter:blur(10px);
+}
+.flagship-cover h3{
+  font-family:var(--display);
+  font-size:48px;line-height:1.05;margin:0;
+  font-weight:400;
+}
+.flagship-cover .sub{font-size:16px;opacity:.92;line-height:1.55;margin-top:14px;max-width:340px}
+.flagship-body{
+  padding:48px;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.flagship-body h4{
+  font-family:var(--display);
+  font-size:24px;margin:0 0 16px;color:var(--ink);font-weight:400;
+}
+.flagship-body p{font-size:16px;line-height:1.7;color:var(--ink-2);margin:0 0 22px}
+.flagship-tags{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;
+}
+.flagship-tags span{
+  font-family:var(--ui);font-size:12px;font-weight:600;
+  background:var(--blush);color:var(--red-deep);
+  padding:7px 14px;border-radius:999px;
+}
 
-  /* ───────── Lectures (editorial TOC) ───────── */
-  .lectures-list{
-    list-style:none; padding:0; margin:0;
-    border-top: 1px solid var(--rule);
-  }
-  .lecture{
-    display:grid;
-    grid-template-columns: 100px 1fr auto;
-    align-items: center;
-    gap: clamp(16px, 3vw, 40px);
-    padding: 28px 12px;
-    border-bottom: 1px solid var(--rule);
-    transition: background .35s var(--ease), padding .35s var(--ease);
-    cursor: default;
-    position: relative;
-    overflow: hidden;
-  }
-  .lecture::before{
-    content:""; position:absolute;
-    inset-inline-start: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: var(--red);
-    transform: scaleY(0); transform-origin: top;
-    transition: transform .35s var(--ease);
-  }
-  .lecture:hover{background: var(--paper-soft); padding-inline: 22px}
-  .lecture:hover::before{transform: scaleY(1)}
-  .lecture .l-num{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-    font-size: 2.2rem;
-    line-height: 1;
-  }
-  .lecture .l-body{
-    min-width: 0;
-  }
-  .lecture .l-title{
-    font-family: var(--serif);
-    font-size: clamp(1.4rem, 2.2vw, 2rem);
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0 0 8px;
-    letter-spacing: -.015em;
-  }
-  .lecture .l-sub{
-    color: var(--ink-soft);
-    font-size: 1rem;
-    margin: 0;
-    max-width: 70ch;
-  }
-  .lecture .l-arrow{
-    display:grid; place-items:center;
-    width: 44px; height: 44px;
-    border: 1.5px solid var(--ink);
-    border-radius: 999px;
-    transition: transform .35s var(--ease), background .35s var(--ease), border-color .35s var(--ease), color .35s var(--ease);
-  }
-  .lecture:hover .l-arrow{
-    background: var(--red);
-    border-color: var(--red);
-    color: var(--paper);
-    transform: rotate(-15deg) scale(1.05);
-  }
+.lectures-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.topic-card{
+  background:var(--snow);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:32px 28px;
+  transition:transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
+  position:relative;overflow:hidden;
+}
+.topic-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--red);
+  box-shadow:var(--shadow-soft);
+}
+.topic-card .num{
+  font-family:var(--display);
+  color:var(--red);font-size:48px;line-height:1;
+  margin-bottom:24px;display:block;opacity:.85;
+}
+.topic-card h4{
+  font-family:var(--display);
+  font-size:23px;line-height:1.2;margin:0 0 12px;color:var(--ink);font-weight:400;
+}
+.topic-card p{
+  font-size:15px;line-height:1.6;color:var(--ink-3);margin:0;
+}
+.topic-card::after{
+  content:'';position:absolute;inset:auto -40% -40% auto;
+  width:200px;height:200px;border-radius:50%;
+  background:var(--blush);
+  opacity:0;transition:opacity .3s var(--ease);
+  z-index:-1;
+}
+.topic-card:hover::after{opacity:.6}
 
-  /* ───────── Consulting cards ───────── */
-  .consult-grid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .consult-card{
-    position: relative;
-    padding: 36px 32px 32px;
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    transition: transform .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease);
-    overflow: hidden;
-  }
-  .consult-card::before{
-    content:""; position:absolute;
-    inset-inline-end: -30px; top: -30px;
-    width: 80px; height: 80px;
-    background: var(--red-haze);
-    border-radius: 999px;
-    transition: transform .5s var(--ease), background .5s var(--ease);
-  }
-  .consult-card:hover{
-    transform: translateY(-6px);
-    border-color: var(--red);
-    box-shadow: var(--shadow-card);
-  }
-  .consult-card:hover::before{
-    transform: scale(8);
-    background: var(--red-haze);
-  }
-  .consult-card .roman{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 2rem;
-    color: var(--red);
-    line-height: 1;
-  }
-  .consult-card h3{
-    font-family: var(--serif);
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 18px 0 14px;
-    position: relative;
-  }
-  .consult-card .latin{
-    display:block;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: .95rem;
-    color: var(--ink-soft);
-    direction: ltr; text-align: left;
-    margin-bottom: 16px;
-  }
-  .consult-card p{
-    margin: 0;
-    color: var(--ink-soft);
-    font-size: 1rem;
-    line-height: 1.65;
-    position: relative;
-  }
-  .consult-card .tag{
-    margin-top: 22px;
-    display:inline-block;
-    padding: 4px 12px;
-    border: 1px solid var(--red);
-    color: var(--red);
-    border-radius: 999px;
-    font-size: .8rem;
-    letter-spacing: .04em;
-    position: relative;
-  }
+.lecture-cta-row{
+  margin-top:48px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+  padding:32px;background:var(--snow);border-radius:var(--radius-lg);
+}
+.lecture-cta-row .icon{
+  width:56px;height:56px;border-radius:50%;
+  background:var(--red);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:24px;
+  flex-shrink:0;
+}
+.lecture-cta-row p{margin:0;flex:1;min-width:240px;font-size:16px;color:var(--ink-2)}
+.lecture-cta-row p b{color:var(--ink);font-weight:700;display:block;font-family:var(--display);font-size:20px;font-weight:400;margin-bottom:4px}
 
-  /* ───────── Eco / Manifesto ───────── */
-  .manifesto{
-    position: relative;
-    padding: clamp(50px, 7vw, 96px);
-    background: var(--ink);
-    color: var(--paper);
-    overflow: hidden;
-  }
-  .manifesto::before{
-    content:""; position:absolute;
-    inset-inline-start: -8%; top: -30%;
-    width: 60%; height: 160%;
-    background: radial-gradient(circle at center, var(--red) 0%, transparent 70%);
-    opacity: .35;
-    filter: blur(20px);
-  }
-  .manifesto-inner{
-    position: relative; z-index: 1;
-    display:grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: clamp(30px, 5vw, 80px);
-    align-items: center;
-  }
-  .manifesto .num{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: clamp(8rem, 14vw, 14rem);
-    line-height: 1;
-    color: var(--red);
-    opacity: .85;
-  }
-  .manifesto h3{
-    font-family: var(--serif);
-    font-size: clamp(2rem, 3.6vw, 3.4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0 0 24px;
-    color: var(--paper);
-  }
-  .manifesto h3 em{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-    font-weight: 500;
-  }
-  .manifesto p{
-    margin: 0 0 16px;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: color-mix(in srgb, var(--paper) 88%, transparent);
-  }
-  .manifesto .ribbon{
-    display:flex; gap: 8px; flex-wrap: wrap;
-    margin-top: 28px;
-  }
-  .manifesto .ribbon span{
-    padding: 6px 14px;
-    border: 1px solid color-mix(in srgb, var(--paper) 40%, transparent);
-    border-radius: 999px;
-    font-size: .85rem;
-    color: var(--paper);
-    letter-spacing: .03em;
-  }
+/* ─────────── consulting ─────────── */
+.consult-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.consult-card{
+  background:var(--paper);
+  border-radius:var(--radius-lg);
+  padding:0;
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  position:relative;
+  transition:transform .3s var(--ease);
+}
+.consult-card:hover{transform:translateY(-6px)}
+.consult-card .head{
+  padding:32px 32px 28px;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+.consult-card .head .seg{
+  font-family:var(--ui);font-size:11px;font-weight:700;letter-spacing:.18em;
+  color:var(--red);
+  margin-bottom:14px;display:block;
+}
+.consult-card .head h3{
+  font-family:var(--display);
+  font-size:30px;line-height:1.1;margin:0;color:var(--ink);font-weight:400;
+}
+.consult-card .body{
+  padding:28px 32px 32px;flex:1;
+  display:flex;flex-direction:column;
+}
+.consult-card .body p{
+  font-size:15.5px;line-height:1.65;color:var(--ink-2);margin:0 0 20px;
+}
+.consult-card .body ul{
+  list-style:none;padding:0;margin:0 0 24px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.consult-card .body ul li{
+  font-size:14.5px;color:var(--ink-2);
+  display:flex;align-items:flex-start;gap:10px;
+  font-weight:500;
+}
+.consult-card .body ul li::before{
+  content:'';width:6px;height:6px;border-radius:50%;background:var(--red);
+  margin-top:8px;flex-shrink:0;
+}
+.consult-card .body .more{
+  margin-top:auto;
+  font-family:var(--ui);font-size:14px;font-weight:700;color:var(--ink);
+  display:inline-flex;align-items:center;gap:8px;
+  padding-bottom:4px;border-bottom:2px solid var(--red);
+  align-self:flex-start;transition:color .2s var(--ease);
+}
+.consult-card .body .more:hover{color:var(--red)}
 
-  /* ───────── Media grid ───────── */
-  .media-grid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-  }
-  .media-card{
-    display:block;
-    position: relative;
-    aspect-ratio: 16/10;
-    overflow: hidden;
-    border: 1px solid var(--rule);
-    background: var(--paper-deep);
-  }
-  .media-card img{
-    position:absolute; inset:0;
-    width: 100%; height: 100%; object-fit: cover;
-    transition: transform .8s var(--ease), filter .5s var(--ease);
-    filter: grayscale(.2) contrast(1.05);
-  }
-  .media-card .overlay{
-    position:absolute; inset:0;
-    background: linear-gradient(180deg, transparent 30%, #16130dee 100%);
-    display:flex; flex-direction: column; justify-content: flex-end;
-    padding: 22px;
-    color: var(--paper);
-  }
-  .media-card .src{
-    align-self:flex-start;
-    padding: 4px 10px;
-    background: var(--red);
-    color: var(--paper);
-    border-radius: 2px;
-    font-size: .75rem;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-  .media-card h4{
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    line-height: 1.3;
-    margin: 0;
-    color: var(--paper);
-  }
-  .media-card .play{
-    position:absolute;
-    top: 50%; inset-inline-start: 50%;
-    transform: translate(50%, -50%) scale(.85);
-    width: 64px; height: 64px;
-    border-radius: 999px;
-    background: var(--paper);
-    display:grid; place-items:center;
-    color: var(--red);
-    opacity: 0;
-    transition: opacity .4s var(--ease), transform .4s var(--ease);
-  }
-  .media-card:hover img{transform: scale(1.05); filter: grayscale(0)}
-  .media-card:hover .play{opacity: 1; transform: translate(50%, -50%) scale(1)}
-  .media-card.tall{grid-row: span 2; aspect-ratio: 4/5}
+.consult-card.c-org{background:linear-gradient(160deg, #ffffff, #fdf3ed)}
+.consult-card.c-small{background:linear-gradient(160deg, #ffffff, #fdf0ee)}
+.consult-card.c-sport{background:linear-gradient(160deg, #ffffff, #f4ede0)}
 
-  /* ───────── Logos ───────── */
-  .logos{
-    margin-top: 80px;
-    padding: 26px 0;
-    border-block: 1px solid var(--rule);
-    overflow: hidden;
-  }
-  .logos-track{
-    display:flex; gap: 60px;
-    width: max-content;
-    animation: scroll 30s linear infinite;
-    align-items: center;
-  }
-  .logos-track .logo-item{
-    font-family: var(--serif);
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--ink-soft);
-    letter-spacing: .02em;
-    white-space: nowrap;
-    display:flex; align-items:center; gap: 60px;
-    opacity: .85;
-    transition: color .25s var(--ease), opacity .25s var(--ease);
-  }
-  .logos-track .logo-item::after{
-    content:"·"; color: var(--red); font-size: 2rem;
-  }
-  .logos-track .logo-item:hover{color: var(--red); opacity: 1}
+.consult-card .marker{
+  position:absolute;top:28px;inset-inline-end:28px;
+  font-family:var(--display);
+  font-size:60px;color:var(--red);opacity:.18;line-height:1;
+}
 
-  /* ───────── Testimonial ───────── */
-  .testimonial{
-    margin-top: 60px;
-    text-align: center;
-    max-width: 820px;
-    margin-inline: auto;
-  }
-  .testimonial blockquote{
-    margin: 0;
-    font-family: var(--serif);
-    font-size: clamp(1.4rem, 2.4vw, 2rem);
-    line-height: 1.5;
-    color: var(--ink);
-  }
-  .testimonial blockquote em{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-  }
-  .testimonial .source{
-    margin-top: 22px;
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 1rem;
-    color: var(--ink-soft);
-  }
+/* ─────────── ecosystem (dark feature) ─────────── */
+.ecosystem-block{
+  background:var(--ink);
+  color:#fff;
+  border-radius:32px;
+  padding:80px 60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.ecosystem-block::before{
+  content:'';position:absolute;
+  inset-inline-end:-150px;top:-150px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle at center, rgba(255,35,82,.4), transparent 60%);
+  pointer-events:none;
+}
+.ecosystem-text > .section-tag{color:var(--red-soft)}
+.ecosystem-text > .section-tag::before{background:var(--red-soft)}
+.ecosystem-text h2{
+  font-family:var(--display);
+  font-size:clamp(34px, 4vw, 54px);
+  line-height:1.05;margin:0 0 24px;color:#fff;font-weight:400;
+}
+.ecosystem-text h2 em{font-style:normal;color:var(--red)}
+.ecosystem-text p{
+  font-size:17.5px;line-height:1.7;color:#c8c9d2;margin:0 0 16px;
+}
+.ecosystem-targets{
+  margin-top:32px;display:flex;flex-wrap:wrap;gap:8px;
+}
+.ecosystem-targets span{
+  font-family:var(--ui);font-size:13px;font-weight:600;
+  border:1px solid rgba(255,255,255,.2);
+  padding:8px 14px;border-radius:999px;
+  background:rgba(255,255,255,.04);
+  color:#fff;
+}
+.ecosystem-text .btn{margin-top:32px}
 
-  /* ───────── Contact ───────── */
-  .contact-grid{
-    display:grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: clamp(40px, 6vw, 80px);
-  }
-  .contact-info p{
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 0 0 24px;
-  }
-  .contact-channels{
-    display:flex; flex-direction: column; gap: 14px;
-    margin-top: 32px;
-  }
-  .channel{
-    display:flex; align-items:center; gap: 16px;
-    padding: 16px 20px;
-    border: 1px solid var(--rule);
-    background: var(--paper);
-    transition: all .25s var(--ease);
-  }
-  .channel:hover{
-    border-color: var(--red);
-    background: var(--paper-soft);
-    transform: translateX(-4px);
-  }
-  .channel .icon{
-    width: 40px; height: 40px;
-    border-radius: 999px;
-    display:grid; place-items:center;
-    background: var(--red-haze);
-    color: var(--red);
-    flex-shrink: 0;
-  }
-  .channel .icon svg{width: 20px; height: 20px}
-  .channel .label{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: .85rem;
-    color: var(--ink-soft);
-    margin-bottom: 2px;
-  }
-  .channel .value{
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-weight: 500;
-    direction: ltr; text-align: right;
-  }
+.ecosystem-diagram{
+  position:relative;
+  aspect-ratio:1/1;
+  max-width:440px;justify-self:center;width:100%;
+}
+.eco-ring{
+  position:absolute;border-radius:50%;
+  border:1.5px dashed rgba(255,255,255,.2);
+}
+.eco-ring.r1{inset:0}
+.eco-ring.r2{inset:14%;border-style:solid;border-color:rgba(255,255,255,.08)}
+.eco-ring.r3{inset:30%;border-style:dashed;border-color:rgba(255,255,255,.15)}
+.eco-center{
+  position:absolute;inset:42%;
+  background:var(--red);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:var(--display);font-size:18px;text-align:center;
+  box-shadow:0 0 0 12px rgba(255,35,82,.16), 0 0 0 24px rgba(255,35,82,.08);
+}
+.eco-node{
+  position:absolute;
+  background:#fff;color:var(--ink);
+  font-family:var(--ui);font-size:12px;font-weight:600;
+  padding:8px 14px;border-radius:999px;
+  white-space:nowrap;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+.eco-node.n1{top:0;left:50%;transform:translate(-50%,-50%)}
+.eco-node.n2{top:25%;right:0;transform:translate(50%,-50%)}
+.eco-node.n3{bottom:25%;right:0;transform:translate(50%,50%)}
+.eco-node.n4{bottom:0;left:50%;transform:translate(-50%,50%)}
+.eco-node.n5{bottom:25%;left:0;transform:translate(-50%,50%)}
+.eco-node.n6{top:25%;left:0;transform:translate(-50%,-50%)}
 
-  .form{
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    padding: clamp(24px, 4vw, 40px);
-    display:grid; gap: 18px;
-  }
-  .form .row2{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  .field{
-    display:flex; flex-direction: column;
-    gap: 6px;
-  }
-  .field label{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: .85rem;
-    color: var(--ink-soft);
-    letter-spacing: .03em;
-  }
-  .field input, .field textarea, .field select{
-    background: transparent;
-    border: 0;
-    border-bottom: 1.5px solid var(--rule-strong);
-    padding: 12px 4px;
-    font: inherit;
-    color: var(--ink);
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    transition: border-color .25s var(--ease);
-    border-radius: 0;
-    appearance: none;
-  }
-  .field input:focus, .field textarea:focus, .field select:focus{
-    outline: 0;
-    border-bottom-color: var(--red);
-  }
-  .field textarea{min-height: 110px; resize: vertical}
-  .field select{
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'><path d='M3 5.5l4 4 4-4' stroke='%23ff2352' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-    background-repeat: no-repeat;
-    background-position: left 4px center;
-    background-size: 14px;
-    padding-inline-start: 30px;
-  }
-  .form .submit-row{
-    display:flex; align-items:center; justify-content:space-between;
-    margin-top: 8px; gap: 16px; flex-wrap: wrap;
-  }
-  .form-note{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: .85rem;
-    color: var(--ink-soft);
-  }
+/* ─────────── media ─────────── */
+.media-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.media-card{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  background:var(--snow);
+  box-shadow:var(--shadow-soft);
+  transition:transform .3s var(--ease);
+  display:flex;flex-direction:column;
+}
+.media-card:hover{transform:translateY(-6px)}
+.media-thumb{
+  position:relative;
+  aspect-ratio:16/9;
+  background:#000;overflow:hidden;
+}
+.media-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.media-card:hover .media-thumb img{transform:scale(1.05)}
+.media-thumb .play{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.media-thumb .play span{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(255,255,255,.95);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .3s var(--ease), background .3s var(--ease);
+}
+.media-card:hover .media-thumb .play span{background:var(--red);transform:scale(1.15)}
+.media-thumb .play span svg{width:20px;height:20px;fill:var(--ink);transition:fill .3s var(--ease)}
+.media-card:hover .media-thumb .play span svg{fill:#fff}
+.media-thumb .src{
+  position:absolute;top:14px;inset-inline-start:14px;
+  background:var(--ink);color:#fff;
+  font-family:var(--ui);font-size:11px;font-weight:700;letter-spacing:.12em;
+  padding:6px 12px;border-radius:999px;
+}
+.media-meta{
+  padding:22px 24px 26px;
+}
+.media-meta h4{
+  font-family:var(--display);
+  font-size:18px;line-height:1.35;margin:0 0 8px;color:var(--ink);font-weight:400;
+}
+.media-meta .dur{
+  font-family:var(--ui);font-size:13px;color:var(--ink-3);font-weight:500;
+  display:flex;align-items:center;gap:6px;
+}
+.media-meta .dur::before{
+  content:'';width:5px;height:5px;border-radius:50%;background:var(--red);
+}
 
-  /* ───────── Footer ───────── */
-  footer{
-    margin-top: 60px;
-    background: var(--ink);
-    color: var(--paper);
-    padding: 80px 0 30px;
-    position: relative;
-  }
-  .footer-grid{
-    display:grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 48px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #ffffff22;
-  }
-  .footer-brand h3{
-    font-family: var(--serif);
-    font-size: 2.2rem;
-    line-height: 1.05;
-    margin: 0 0 14px;
-    color: var(--paper);
-  }
-  .footer-brand .sig{
-    font-family: var(--italic);
-    font-style: italic;
-    font-size: 1.3rem;
-    color: var(--red);
-    margin-top: 18px;
-  }
-  .footer-col h4{
-    font-family: var(--italic);
-    font-style: italic;
-    color: var(--red);
-    font-size: 1rem;
-    margin: 0 0 16px;
-    letter-spacing: .04em;
-  }
-  .footer-col ul{
-    list-style:none; padding:0; margin:0;
-    display:flex; flex-direction: column; gap: 10px;
-  }
-  .footer-col a{
-    color: color-mix(in srgb, var(--paper) 80%, transparent);
-    transition: color .25s var(--ease), padding-inline-start .25s var(--ease);
-    font-size: .95rem;
-  }
-  .footer-col a:hover{color: var(--red); padding-inline-start: 6px}
-  .footer-bottom{
-    padding-top: 28px;
-    display:flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 14px;
-    font-size: .85rem;
-    color: color-mix(in srgb, var(--paper) 60%, transparent);
-  }
-  .footer-bottom a{color: var(--red)}
+/* ─────────── logos marquee ─────────── */
+.logos-section{
+  padding:80px 0;background:var(--snow);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.logos-head{
+  text-align:center;margin-bottom:40px;padding:0 28px;
+}
+.logos-head .section-tag{justify-content:center;display:inline-flex}
+.logos-head h3{
+  font-family:var(--display);
+  font-size:clamp(24px, 2.6vw, 32px);
+  margin:0;color:var(--ink);font-weight:400;
+}
+.logos-marquee{
+  overflow:hidden;
+  mask:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.logos-track{
+  display:flex;gap:64px;
+  animation:scroll-x 28s linear infinite;
+  align-items:center;
+  width:max-content;
+}
+.logo-item{
+  font-family:var(--display);
+  font-size:26px;color:var(--ink-3);
+  white-space:nowrap;
+  padding:14px 24px;border:1.5px solid var(--line);border-radius:14px;
+  font-weight:400;letter-spacing:-.005em;
+  transition:color .2s var(--ease), border-color .2s var(--ease);
+}
+.logo-item:hover{color:var(--red);border-color:var(--red)}
 
-  /* ───────── Floating WhatsApp ───────── */
-  .wa{
-    position: fixed; z-index: 60;
-    inset-inline-start: 24px; bottom: 24px;
-    display:flex; align-items:center; gap: 10px;
-    background: #25d366;
-    color: white;
-    padding: 12px 20px 12px 16px;
-    border-radius: 999px;
-    box-shadow: 0 14px 40px -14px #25d36680, 0 4px 16px -4px #00000040;
-    transition: transform .3s var(--ease), box-shadow .3s var(--ease);
-    font-family: var(--sans);
-    font-weight: 500;
-    font-size: .9rem;
-  }
-  .wa:hover{transform: translateY(-3px); box-shadow: 0 22px 50px -16px #25d36680, 0 6px 20px -4px #00000040}
-  .wa svg{width: 22px; height: 22px}
+/* ─────────── testimonials ─────────── */
+.testimonials-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.testimonial{
+  background:var(--snow);
+  border-radius:var(--radius-lg);
+  padding:36px 36px 32px;
+  position:relative;
+  border:1px solid var(--line);
+}
+.testimonial::before{
+  content:'״';
+  position:absolute;
+  top:8px;inset-inline-start:24px;
+  font-family:var(--display);
+  font-size:80px;color:var(--red);line-height:1;opacity:.4;
+}
+.testimonial blockquote{
+  margin:0 0 22px;padding:0;
+  font-family:var(--display);
+  font-size:21px;line-height:1.45;color:var(--ink);
+  font-weight:400;
+}
+.testimonial .who{
+  display:flex;align-items:center;gap:14px;
+  padding-top:20px;border-top:1px solid var(--line);
+}
+.testimonial .who .avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--blush);color:var(--red-deep);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:18px;font-weight:400;
+}
+.testimonial .who .info{flex:1}
+.testimonial .who .name{font-family:var(--ui);font-weight:700;font-size:14.5px;color:var(--ink)}
+.testimonial .who .role{font-family:var(--ui);font-size:12.5px;color:var(--ink-3);margin-top:2px}
 
-  /* ───────── Reveal animation ───────── */
-  .reveal{
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity .9s var(--ease), transform .9s var(--ease);
-  }
-  .reveal.is-in{opacity: 1; transform: none}
-  .reveal-stagger > *{
-    opacity: 0; transform: translateY(28px);
-    transition: opacity .9s var(--ease), transform .9s var(--ease);
-  }
-  .reveal-stagger.is-in > *{opacity: 1; transform: none}
-  .reveal-stagger.is-in > *:nth-child(1){transition-delay: 0ms}
-  .reveal-stagger.is-in > *:nth-child(2){transition-delay: 80ms}
-  .reveal-stagger.is-in > *:nth-child(3){transition-delay: 160ms}
-  .reveal-stagger.is-in > *:nth-child(4){transition-delay: 240ms}
-  .reveal-stagger.is-in > *:nth-child(5){transition-delay: 320ms}
-  .reveal-stagger.is-in > *:nth-child(6){transition-delay: 400ms}
+/* ─────────── contact ─────────── */
+.contact-block{
+  background:var(--ink);color:#fff;
+  border-radius:32px;
+  padding:80px 60px;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:80px;align-items:start;
+  position:relative;overflow:hidden;
+}
+.contact-block::before{
+  content:'';position:absolute;
+  inset-inline-start:-200px;bottom:-200px;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle at center, rgba(255,35,82,.3), transparent 60%);
+  pointer-events:none;
+}
+.contact-info{position:relative;z-index:1}
+.contact-info .section-tag{color:var(--red-soft)}
+.contact-info .section-tag::before{background:var(--red-soft)}
+.contact-info h2{
+  font-family:var(--display);
+  font-size:clamp(34px, 4vw, 54px);line-height:1.05;
+  margin:0 0 24px;color:#fff;font-weight:400;
+}
+.contact-info p{font-size:17.5px;line-height:1.7;color:#c8c9d2;margin:0 0 32px;max-width:380px}
+.contact-channels{
+  display:flex;flex-direction:column;gap:14px;margin-top:32px;
+}
+.contact-channels a{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 18px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;
+  background:rgba(255,255,255,.04);
+  font-family:var(--ui);font-size:15px;font-weight:600;
+  transition:background .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
+}
+.contact-channels a:hover{background:rgba(255,35,82,.12);border-color:var(--red);transform:translateX(-4px)}
+.contact-channels .ico{
+  width:36px;height:36px;border-radius:10px;
+  background:rgba(255,255,255,.06);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;color:var(--red);
+}
+.contact-channels .ico svg{width:18px;height:18px}
+.contact-channels .label{flex:1;display:flex;flex-direction:column;line-height:1.2}
+.contact-channels .label small{font-weight:400;color:#9aa0b1;font-size:12.5px;margin-top:3px}
 
-  /* ───────── Responsive ───────── */
-  @media (max-width: 960px){
-    .menu, .nav-cta{display:none}
-    .burger{
-      display:flex; flex-direction:column; gap: 5px;
-      padding: 10px;
-      cursor:pointer;
-    }
-    .burger span{
-      display:block; width: 26px; height: 2px;
-      background: var(--ink);
-      transition: transform .3s var(--ease), opacity .3s var(--ease);
-    }
-    body.menu-open .burger span:nth-child(1){transform: translateY(7px) rotate(45deg)}
-    body.menu-open .burger span:nth-child(2){opacity: 0}
-    body.menu-open .burger span:nth-child(3){transform: translateY(-7px) rotate(-45deg)}
-    .mobile-menu{
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: var(--paper);
-      padding: 100px 7vw 40px;
-      z-index: 49;
-      display: flex !important;
-      flex-direction: column; gap: 8px;
-      overflow-y: auto;
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(-8px);
-      transition: opacity .3s var(--ease), transform .3s var(--ease), visibility 0s linear .3s;
-    }
-    body.menu-open{overflow: hidden}
-    body.menu-open .mobile-menu{
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity .3s var(--ease), transform .3s var(--ease), visibility 0s linear 0s;
-    }
-    .mobile-menu a{
-      font-family: var(--serif);
-      font-size: 2rem;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .mobile-menu a em{font-family: var(--italic); font-style: italic; color: var(--red); font-size: 1rem; margin-inline-start: 10px}
+.contact-form{
+  background:#fff;color:var(--ink);
+  border-radius:24px;
+  padding:40px;position:relative;z-index:1;
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+.contact-form h3{
+  font-family:var(--display);
+  font-size:26px;margin:0 0 8px;color:var(--ink);font-weight:400;
+}
+.contact-form .form-sub{
+  font-size:14.5px;color:var(--ink-3);margin:0 0 28px;
+}
+.field{margin-bottom:18px}
+.field label{
+  display:block;font-family:var(--ui);font-size:13px;font-weight:600;
+  color:var(--ink-2);margin-bottom:8px;letter-spacing:.02em;
+}
+.field input,.field select,.field textarea{
+  width:100%;
+  padding:14px 16px;
+  font-family:var(--sans);font-size:15px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  color:var(--ink);
+  transition:border-color .2s var(--ease), background .2s var(--ease);
+  -webkit-appearance:none;appearance:none;
+}
+.field select{
+  background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23171a26' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") left 18px center/14px no-repeat;
+  padding-inline-start:42px;
+  cursor:pointer;
+}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--red);background:#fff;
+}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-form .submit{
+  width:100%;
+  background:var(--red);color:#fff;
+  padding:16px;border-radius:12px;
+  font-family:var(--ui);font-size:16px;font-weight:700;
+  transition:background .2s var(--ease), transform .2s var(--ease);
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  margin-top:8px;
+}
+.contact-form .submit:hover{background:var(--red-deep);transform:translateY(-2px)}
+.contact-form .legal{
+  font-size:12px;color:var(--mute);margin-top:14px;text-align:center;line-height:1.5;
+}
 
-    .hero-grid{grid-template-columns: 1fr; gap: 50px}
-    .portrait-wrap{max-width: 340px; margin: 30px auto 0}
-    .sec-head{grid-template-columns: 1fr; gap: 18px}
-    .about-grid{grid-template-columns: 1fr; gap: 40px}
-    .about-shape{max-width: 460px; margin-inline: auto; padding: 28px}
-    .about-shape h3{font-size: 1.6rem; margin-bottom: 20px}
-    .about-shape ul{font-size: 1rem; gap: 10px}
-    .consult-grid{grid-template-columns: 1fr}
-    .media-grid{grid-template-columns: 1fr 1fr}
-    .media-card.tall{grid-row: auto; aspect-ratio: 16/10}
-    .manifesto-inner{grid-template-columns: 1fr; gap: 24px; text-align: center}
-    .manifesto .num{font-size: 7rem}
-    .contact-grid{grid-template-columns: 1fr}
-    .footer-grid{grid-template-columns: 1fr; gap: 32px}
-    .lecture{grid-template-columns: 60px 1fr; padding: 22px 8px}
-    .lecture .l-arrow{display:none}
-    .form .row2{grid-template-columns: 1fr}
-  }
+/* ─────────── footer ─────────── */
+footer{
+  background:var(--paper);
+  padding:60px 28px 30px;
+  border-top:1px solid var(--line);
+}
+.footer-row{
+  max-width:var(--max);margin:0 auto;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:60px;
+  align-items:start;
+  padding-bottom:40px;
+  border-bottom:1px solid var(--line);
+}
+.footer-brand{
+  display:flex;flex-direction:column;gap:14px;
+}
+.footer-brand .name{font-family:var(--display);font-size:24px;color:var(--ink)}
+.footer-brand p{font-size:14.5px;color:var(--ink-3);line-height:1.6;margin:0;max-width:340px}
+.footer-col h5{
+  font-family:var(--ui);font-size:12px;font-weight:700;letter-spacing:.16em;
+  color:var(--red);margin:0 0 18px;
+}
+.footer-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.footer-col a{font-size:14.5px;color:var(--ink-2);transition:color .2s var(--ease)}
+.footer-col a:hover{color:var(--red)}
+.footer-bottom{
+  max-width:var(--max);margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:24px;font-size:12.5px;color:var(--mute);font-family:var(--ui);
+  flex-wrap:wrap;gap:14px;
+}
+.footer-bottom .socials{display:flex;gap:8px}
+.footer-bottom .socials a{
+  width:34px;height:34px;border-radius:50%;
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;color:var(--ink-3);
+  transition:background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.footer-bottom .socials a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.footer-bottom .socials svg{width:15px;height:15px;fill:currentColor}
 
-  @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation-duration: .001ms !important; transition-duration: .001ms !important}
-    .marquee-track, .logos-track{animation: none}
-  }
+/* ─────────── floating WA ─────────── */
+.wa-float{
+  position:fixed;
+  bottom:24px;inset-inline-end:24px;
+  z-index:60;
+  width:60px;height:60px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px rgba(37,211,102,.45);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  animation:float-pop .8s var(--ease) .8s both;
+}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 16px 40px rgba(37,211,102,.55)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes float-pop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.wa-float::after{
+  content:'';position:absolute;inset:-4px;border-radius:50%;
+  border:2px solid #25D366;opacity:.4;
+  animation:wa-ring 2.4s ease-out infinite;
+}
+@keyframes wa-ring{
+  0%{transform:scale(.9);opacity:.6}
+  100%{transform:scale(1.5);opacity:0}
+}
+
+/* ─────────── lightbox ─────────── */
+.lightbox{
+  position:fixed;inset:0;background:rgba(0,0,0,.92);
+  z-index:100;display:flex;align-items:center;justify-content:center;
+  padding:28px;opacity:0;visibility:hidden;
+  transition:opacity .3s var(--ease), visibility 0s linear .3s;
+}
+.lightbox.open{opacity:1;visibility:visible;transition-delay:0s}
+.lightbox iframe{
+  width:min(100%, 1080px);
+  aspect-ratio:16/9;
+  border:0;border-radius:12px;
+}
+.lightbox .close{
+  position:absolute;top:24px;inset-inline-end:24px;
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(255,255,255,.1);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;border:1px solid rgba(255,255,255,.2);
+  transition:background .2s var(--ease);
+}
+.lightbox .close:hover{background:var(--red);border-color:var(--red)}
+
+/* ─────────── reveal animation ─────────── */
+.reveal{
+  opacity:0;transform:translateY(28px);
+  transition:opacity .8s var(--ease), transform .8s var(--ease);
+}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ─────────── responsive ─────────── */
+@media (max-width: 960px){
+  body{font-size:16px}
+  .nav-row{padding:12px 20px}
+  .nav-menu{display:none}
+  .menu-btn{display:flex}
+
+  .hero{padding:40px 20px 60px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:clamp(38px, 9vw, 56px)}
+  .hero-sub{font-size:17px}
+  .hero-portrait{justify-self:center;max-width:380px}
+  .hero-portrait .play-bubble{width:96px;height:96px;font-size:10px;bottom:-16px;inset-inline-end:-12px}
+  .hero-portrait .badge{font-size:11px;padding:8px 12px;inset-inline-start:-6px}
+  .hero-meta{gap:18px;flex-wrap:wrap}
+  .hero-meta b{font-size:20px}
+
+  .ticker-track{font-size:18px}
+
+  .section{padding:80px 20px}
+  .section-wide > .inner{padding:80px 20px}
+  .section-head{margin-bottom:44px;gap:20px}
+  .section-title{font-size:clamp(30px, 7vw, 42px)}
+  .section-lede{font-size:16.5px}
+
+  .about-grid{grid-template-columns:1fr;gap:60px}
+  .about-portrait{max-width:340px;margin:0 auto}
+  .about-portrait .stamp{width:110px;height:110px;inset-inline-start:-12px;bottom:-22px}
+  .about-portrait .stamp .big{font-size:26px}
+  .about-text .pull{font-size:20px}
+  .about-credits{grid-template-columns:1fr 1fr;gap:18px}
+
+  .lectures-flagship{grid-template-columns:1fr}
+  .flagship-cover{padding:36px 28px;min-height:280px}
+  .flagship-cover h3{font-size:34px}
+  .flagship-body{padding:32px 28px}
+  .lectures-grid{grid-template-columns:1fr;gap:14px}
+
+  .consult-grid{grid-template-columns:1fr;gap:18px}
+  .consult-card .head h3{font-size:26px}
+
+  .ecosystem-block{padding:48px 28px;grid-template-columns:1fr;gap:48px;border-radius:24px}
+  .ecosystem-text h2{font-size:32px}
+  .ecosystem-diagram{max-width:340px}
+  .eco-node{font-size:11px;padding:6px 12px}
+
+  .media-grid{grid-template-columns:1fr;gap:18px}
+
+  .testimonials-grid{grid-template-columns:1fr;gap:14px}
+  .testimonial{padding:28px}
+  .testimonial blockquote{font-size:18px}
+
+  .contact-block{padding:48px 28px;grid-template-columns:1fr;gap:48px;border-radius:24px}
+  .contact-info h2{font-size:34px}
+  .contact-form{padding:28px}
+  .field-row{grid-template-columns:1fr}
+
+  .footer-row{grid-template-columns:1fr;gap:36px;padding-bottom:30px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:18px}
+
+  .lecture-cta-row{padding:24px;flex-direction:column;align-items:flex-start;gap:18px}
+
+  .wa-float{width:54px;height:54px;bottom:18px;inset-inline-end:18px}
+  .wa-float svg{width:26px;height:26px}
+}
 </style>
 </head>
 <body>
 
-<div class="scroll-bar" id="scrollBar"></div>
-
-<!-- ───────── Nav ───────── -->
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a href="#top" class="brandmark" aria-label="ד״ר טל אלוני רוזן">
-      <span class="stamp">טאר</span>
-      <span><b>ד״ר טל אלוני רוזן</b> <em>· מחברת בין אסטרטגיה לערכים</em></span>
+<!-- ─────────── NAV ─────────── -->
+<header class="nav" id="nav">
+  <div class="nav-row">
+    <a class="brand" href="#top">
+      <span class="brand-dot"></span>
+      <span>ד״ר טל אלוני רוזן</span>
     </a>
-    <nav class="menu" aria-label="ראשית">
+    <nav class="nav-menu" aria-label="ניווט ראשי">
       <a href="#about">אודות</a>
-      <a href="#lectures">הרצאות</a>
-      <a href="#consult">ייעוץ אסטרטגי</a>
-      <a href="#eco">המודל המחקרי</a>
+      <a href="#lectures">הרצאות וסדנאות</a>
+      <a href="#consulting">ייעוץ אסטרטגי</a>
+      <a href="#ecosystem">מודל אקו־סיסטם</a>
       <a href="#media">מהתקשורת</a>
+      <a href="#contact" class="nav-cta">צרו קשר</a>
     </nav>
-    <a href="#contact" class="nav-cta">
-      צור קשר
-      <svg viewBox="0 0 24 24" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-    <button class="burger" id="burger" aria-label="תפריט" aria-controls="mobileMenu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="menu-btn" aria-label="פתח תפריט" id="menuBtn"><span></span></button>
   </div>
-  <nav class="mobile-menu" id="mobileMenu" aria-label="תפריט נייד">
-    <a href="#about">אודות</a>
-    <a href="#lectures">הרצאות וסדנאות</a>
-    <a href="#consult">ייעוץ וליווי אסטרטגי</a>
-    <a href="#eco">המודל המחקרי</a>
-    <a href="#media">מהתקשורת</a>
-    <a href="#contact">צור קשר</a>
-  </nav>
 </header>
 
-<main id="top">
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#about">אודות</a>
+  <a href="#lectures">הרצאות וסדנאות</a>
+  <a href="#consulting">ייעוץ וליווי אסטרטגי</a>
+  <a href="#consulting" class="mobile-sub">— ארגונים וחברות</a>
+  <a href="#consulting" class="mobile-sub">— עסקים קטנים</a>
+  <a href="#consulting" class="mobile-sub">— ספורט וסטארטאפים</a>
+  <a href="#ecosystem">מודל האקו־סיסטם</a>
+  <a href="#media">מהתקשורת</a>
+  <a href="#contact">צרו קשר</a>
+  <a class="wa-mobile" href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99+%D7%98%D7%9C%2C+%D7%94%D7%92%D7%A2%D7%AA%D7%99+%D7%9E%D7%94%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+    שלחו וואטסאפ
+  </a>
+</div>
 
-<!-- ───────── Hero ───────── -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div class="reveal-stagger">
-        <div class="eyebrow">
-          <span class="num">01</span>
-          <span class="line"></span>
-          <span>שלום, אני טל</span>
-        </div>
-        <h1>
-          <span class="row"><span>ד״ר טל</span></span>
-          <span class="row"><span>אלוני רוזן</span></span>
-        </h1>
-        <p class="tagline">
-          <span class="underline">מחברת</span> בין אסטרטגיה לערכים — בין המגרש לאקדמיה.
-        </p>
-        <p class="latin-sub">יועצת אסטרטגית · מרצה באקדמיה · חוקרת שיווק, שיווק ספורט והתנהגות צרכנים</p>
-        <div class="cta-row">
-          <a href="#contact" class="btn btn-primary" data-cta="lecture">
-            להזמנת הרצאה
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#contact" class="btn btn-ghost" data-cta="consulting">
-            לליווי עסקי
-          </a>
-          <a href="#eco" class="btn btn-outline">
-            המודל המחקרי
-          </a>
-        </div>
+<!-- ─────────── HERO ─────────── -->
+<section class="hero" id="top">
+  <div class="hero-deco-1"></div>
+  <div class="hero-deco-2"></div>
+  <div class="hero-grid">
+    <div class="hero-text reveal">
+      <div class="hero-eyebrow">מרצה · יועצת · חוקרת</div>
+      <h1>מחברת בין <em>אסטרטגיה</em> לערכים, בין <span class="red-line">המגרש</span> לאקדמיה.</h1>
+      <p class="hero-sub">
+        ד״ר טל אלוני רוזן — דוקטור למנהל עסקים, שמאמינה ש<strong>שיווק טוב</strong> לא נמדד רק במספרים, אלא בקשרים שהוא בונה, בקהילות שהוא יוצר, ובשינויים שהוא מצליח להוביל.
+      </p>
+      <div class="hero-cta">
+        <a href="#lectures" class="btn btn-primary">להזמנת הרצאה <span class="btn-arrow"></span></a>
+        <a href="#consulting" class="btn btn-ink">ליווי עסקי</a>
+        <a href="#ecosystem" class="btn btn-outline">המודל המחקרי</a>
       </div>
+      <div class="hero-meta">
+        <div><b>20+</b><span>שנות ניסיון בשיווק</span></div>
+        <div><b>P&amp;G</b><span>ניסיון בינלאומי</span></div>
+        <div><b>אתנה</b><span>ראש מערך השיווק</span></div>
+      </div>
+    </div>
 
-      <div class="reveal">
-        <div class="portrait-wrap">
-          <div class="portrait-frame">
-            <img class="portrait" src="https://ugc.production.linktr.ee/8100c2b9-f6df-4829-b221-509e51588a6c_-.png" alt="ד״ר טל אלוני רוזן" />
-          </div>
-          <div class="portrait-tag">שיווק טוב לא נמדד <span>במספרים</span></div>
-        </div>
+    <div class="hero-portrait reveal">
+      <div class="badge">מרצה לתואר ראשון ושני</div>
+      <div class="frame">
+        <img src="https://ugc.production.linktr.ee/8100c2b9-f6df-4829-b221-509e51588a6c_-.png" alt="ד״ר טל אלוני רוזן" loading="eager">
       </div>
+      <button class="play-bubble" data-video="4ojo-KijIcQ" aria-label="צפו בסרטון">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+        צפו בסרטון
+      </button>
     </div>
   </div>
 </section>
 
-<!-- ───────── Marquee ───────── -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>יועצת אסטרטגית</span><span>מרצה באקדמיה</span><span>חוקרת שיווק</span><span>שיווק ספורט</span><span>התנהגות צרכנים</span><span>אמא · פמיניסטית · אוהבת בעלי חיים</span>
-    <span>יועצת אסטרטגית</span><span>מרצה באקדמיה</span><span>חוקרת שיווק</span><span>שיווק ספורט</span><span>התנהגות צרכנים</span><span>אמא · פמיניסטית · אוהבת בעלי חיים</span>
+<!-- ─────────── TICKER ─────────── -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>שיווק התנהגותי <span class="dot"></span> אסטרטגיית מותג <span class="dot"></span> פסיכולוגיית צרכן <span class="dot"></span> מודל אקו־סיסטם <span class="dot"></span> שיווק חברתי <span class="dot"></span> ספורט וקהילה <span class="dot"></span> פרדוקס הבחירה <span class="dot"></span></span>
+    <span>שיווק התנהגותי <span class="dot"></span> אסטרטגיית מותג <span class="dot"></span> פסיכולוגיית צרכן <span class="dot"></span> מודל אקו־סיסטם <span class="dot"></span> שיווק חברתי <span class="dot"></span> ספורט וקהילה <span class="dot"></span> פרדוקס הבחירה <span class="dot"></span></span>
   </div>
 </div>
 
-<!-- ───────── About ───────── -->
+<!-- ─────────── ABOUT ─────────── -->
 <section class="section" id="about">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-tag">
-        <span class="num">02</span>
-        אודות
-      </div>
-      <h2 class="sec-title">בקשרים <em>שהוא</em> בונה —<br/>ובשינויים שהוא <em>מצליח להוביל.</em></h2>
-    </header>
+  <div class="section-head reveal">
+    <div>
+      <div class="section-tag">אודות · The Story</div>
+      <h2 class="section-title">שלום, אני <em>טל</em>.<br>מרצה, יועצת וחוקרת.</h2>
+    </div>
+    <p class="section-lede">
+      אקדמיה היא לא רק מקום ללמידה — היא מנוע לפעולה.
+      מקום שבו רעיונות יכולים באמת להזיז מציאות.
+    </p>
+  </div>
 
-    <div class="about-grid">
-      <aside class="about-shape reveal">
-        <div class="label">בקיצור</div>
-        <h3>פרופיל מקצועי</h3>
-        <ul>
-          <li>יועצת אסטרטגית לחברות וארגונים</li>
-          <li>מרצה בכירה באקדמיה</li>
-          <li>חוקרת שיווק והתנהגות צרכנים</li>
-          <li>מומחית בשיווק ספורט</li>
-          <li>זוכת פרסי הצטיינות בהוראה</li>
-        </ul>
-      </aside>
-
-      <div class="about-text reveal-stagger">
-        <p class="lead">שלום, אני ד״ר טל אלוני רוזן — מרצה, יועצת וחוקרת. שמאמינה ששיווק טוב לא נמדד רק במספרים, אלא בקשרים שהוא בונה, בקהילות שהוא יוצר ומחבר, ובשינויים שהוא מצליח להוביל.</p>
-        <p>אני גם אמא לשתי בנות מבריקות, בת זוג, פמיניסטית, ואוהבת בעלי חיים עם אהבה ענקית ומיוחדת לכלבות.</p>
-        <p>התחלתי את הדרך שלי בעולם העסקים הבינלאומי: פרוקטר אנד גמבל, הייטק, בניית זהות תאגידית, ספרי מותגים, תערוכות בחו״ל וכנסי ענק, מדיניות ואסטרטגיה — שנים שבהן למדתי לעומק איך מספרים סיפור, בונים מותג ומניעים קהל. אבל בתוך הרעש התאגידי, הבנתי שהשאלות הכי מעניינות אותי תמיד לא נפתרות בקמפיין — אלא בזירה החברתית, החינוכית, האנושית.</p>
-        <p>ב־2014 הצטרפתי ל״אתנה״ — הפרויקט הלאומי לקידום ספורט ילדות, נערות ונשים בישראל, ושם גיליתי כמה עומק יש במקום שבו תקשורת, שוויון וחזון נפגשים. משם נולדה גם שאלת המחקר שהובילה אותי לדוקטורט: איך שיווק, פרסום ואסטרטגיה יכולים לגרום לילדות להרגיש שהן <em>שייכות</em> גם על המגרש.</p>
-        <p>אני דוקטור למנהל עסקים, עם התמחות בשיווק, ספורט וחברה — ואת כל הדרך האקדמית שלי, מהתואר הראשון ועד הדוקטורט, עשיתי בהצטיינות. ההוראה עבורי היא לא רק שליחות אלא זכות יומיומית: אני מרצה לתארים ראשון ושני, מלווה סטודנטים וסטודנטיות במסלולים לשיווק, חינוך, ניהול וספורט, וזוכת פרסי הצטיינות על הוראה שמשלבת ידע, ערכים ורגש.</p>
-
-        <div class="pull-quote">
-          שיווק הוא לא מה שנאמר אלא מה <em>שנעשה בפועל</em>. הלכה למעשה.
-          <cite>טל אלוני רוזן</cite>
+  <div class="about-grid">
+    <div class="about-portrait reveal">
+      <div class="stack">
+        <div class="stripe"></div>
+        <div class="photo">
+          <img src="https://ugc.production.linktr.ee/8100c2b9-f6df-4829-b221-509e51588a6c_-.png" alt="ד״ר טל אלוני רוזן">
         </div>
+        <div class="stamp">
+          <span class="big">PhD</span>
+          <span class="small">בהצטיינות</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <h2>מהזירה התאגידית לזירה החברתית, ובחזרה למגרש.</h2>
+      <p>
+        התחלתי את הדרך שלי בעולם העסקים הבינלאומי — <strong>פרוקטר אנד גמבל</strong>, הייטק, בניית זהות תאגידית, ספרי מותגים, תערוכות בחו״ל וכנסי ענק. שנים שבהן למדתי לעומק איך מספרים סיפור, בונים מותג, ומניעים קהל.
+      </p>
+      <p>
+        אבל בתוך הרעש התאגידי הבנתי שהשאלות שהכי מעניינות אותי לא תמיד נפתרות בקמפיין — אלא בזירה החברתית, החינוכית והאנושית. ב־2014 הצטרפתי ל<strong>״אתנה״</strong>, הפרויקט הלאומי לקידום ספורט ילדות, נערות ונשים בישראל, ושם גיליתי כמה עומק יש במקום שבו תקשורת, שוויון וחזון נפגשים.
+      </p>
+      <div class="pull">
+        שיווק הוא לא מה שנאמר — אלא מה שנעשה בפועל, הלכה למעשה.
+      </div>
+      <p>
+        משם נולדה גם שאלת המחקר שהובילה אותי לדוקטורט: איך שיווק, פרסום ואסטרטגיה יכולים לגרום לילדות להרגיש שהן שייכות גם על המגרש. את כל הדרך האקדמית שלי, מהתואר הראשון ועד הדוקטורט, עשיתי בהצטיינות, וזכיתי בפרסי הצטיינות על הוראה שמשלבת ידע, ערכים ורגש.
+      </p>
+
+      <div class="about-credits">
+        <div class="about-credit"><span class="num">PhD</span><span class="label">דוקטורט<br>בשיווק וחברה</span></div>
+        <div class="about-credit"><span class="num">★</span><span class="label">פרסי הצטיינות<br>על הוראה</span></div>
+        <div class="about-credit"><span class="num">∞</span><span class="label">פרויקטים בין<br>מגרש לקהילה</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ───────── Lectures ───────── -->
-<section class="section" id="lectures">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-tag">
-        <span class="num">03</span>
-        הרצאות וסדנאות
+<!-- ─────────── LECTURES ─────────── -->
+<section class="section-wide section-blush" id="lectures">
+  <div class="inner">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-tag">הרצאות וסדנאות · Knowledge &amp; Inspiration</div>
+        <h2 class="section-title">לראות את העולם דרך <em>משקפי השיווק</em>.</h2>
       </div>
-      <h2 class="sec-title">לראות את העולם <em>דרך</em> משקפי השיווק.</h2>
-      <p class="sec-sub" style="grid-column:2">הצצה למאחורי הקלעים של עולם הצרכנות והבחירות שלנו — הרצאות וסדנאות לקהלים מקצועיים, ארגוניים, אקדמיים ולציבור הרחב.</p>
-    </header>
-
-    <ol class="lectures-list">
-      <li class="lecture reveal">
-        <div class="l-num">01</div>
-        <div class="l-body">
-          <h3 class="l-title">״מי מפחד משיווק?״</h3>
-          <p class="l-sub">הצצה מפתיעה לעולם שמחליט בשבילנו מבלי שנרגיש. הרצאה מרתקת וקלילה — פותחת את מאחורי הקלעים של עולם השיווק והצרכנות.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-      <li class="lecture reveal">
-        <div class="l-num">02</div>
-        <div class="l-body">
-          <h3 class="l-title">״למה קניתי את זה בכלל?״</h3>
-          <p class="l-sub">על פרדוקס הבחירה, מניפולציות שקטות והכוחות שמעצבים את ההחלטות שלנו.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-      <li class="lecture reveal">
-        <div class="l-num">03</div>
-        <div class="l-body">
-          <h3 class="l-title">״שיווק בלי פילטרים״</h3>
-          <p class="l-sub">איך מותגים נכנסים לנו ללב (ולכיס) — גם כשנדמה לנו שהם לא.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-      <li class="lecture reveal">
-        <div class="l-num">04</div>
-        <div class="l-body">
-          <h3 class="l-title">״הקופסה שמסביב למוצר״</h3>
-          <p class="l-sub">מסע קצר לעולם שבו לא מה שמוכרים קובע — אלא איך גורמים לנו להרגיש.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-      <li class="lecture reveal">
-        <div class="l-num">05</div>
-        <div class="l-body">
-          <h3 class="l-title">״מה גורם לנו לבחור?״</h3>
-          <p class="l-sub">סודות קטנים מהמדף, מהמוח ומהלב של הצרכנים.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-      <li class="lecture reveal">
-        <div class="l-num">06</div>
-        <div class="l-body">
-          <h3 class="l-title">״שיווק על הספה״</h3>
-          <p class="l-sub">מה קורה כשפסיכולוגיה, עיצוב ומיתוג נפגשים? ״איך גורמים לך להגיד כן?״ — כלים מעולם השכנוע, ההתנהגות הצרכנית והבחירה האנושית.</p>
-        </div>
-        <div class="l-arrow"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      </li>
-    </ol>
-
-    <div style="margin-top:48px; display:flex; justify-content:center;">
-      <a href="#contact" class="btn btn-primary">
-        להזמנת הרצאה או סדנה
-        <svg class="arrow" viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+      <p class="section-lede">
+        להרצאות לארגונים, וועדי עובדים, סדנאות לצוותים וימי עיון. מתאימות אישית למטרת היום.
+      </p>
     </div>
-  </div>
-</section>
 
-<!-- ───────── Consulting ───────── -->
-<section class="section" id="consult">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-tag">
-        <span class="num">04</span>
-        ייעוץ וליווי אסטרטגי
-      </div>
-      <h2 class="sec-title">ייעוץ וליווי <em>אסטרטגי</em> — לכל סגמנט מענה מדויק.</h2>
-      <p class="sec-sub" style="grid-column:2">שלושה מסלולי עבודה, שלוש שפות שונות של שוק. כל אחד נבנה סביב צרכים, תקציב וזירה אחרת.</p>
-    </header>
-
-    <div class="consult-grid reveal-stagger">
-      <article class="consult-card">
-        <div class="roman">I.</div>
-        <h3>ארגונים וחברות</h3>
-        <p>ליווי בריטיינר לבניית זהות תאגידית, אסטרטגיית מותג ומדיניות אסטרטגית שיווקית. עבודה לאורך זמן עם הנהלות, צוותי מיתוג ומנהלי שיווק.</p>
-        <span class="tag">לארגונים</span>
-      </article>
-
-      <article class="consult-card">
-        <div class="roman">II.</div>
-        <h3>עסקים קטנים</h3>
-        <p>״אסטרטגיה בזמן פציעות״ — ליווי ממוקד לבניית בידול ונוכחות משמעותית בשוק משתנה. ייעוץ עסקי שמבוסס על נתונים, מחקר התנהגות צרכנים והרבה אינטואיציה שיווקית.</p>
-        <span class="tag">לעסקים קטנים</span>
-      </article>
-
-      <article class="consult-card">
-        <div class="roman">III.</div>
-        <h3>ספורט, מאני־כושר וסטארטאפים</h3>
-        <p>ייעוץ מומחה למותגי ספורט וטכנולוגיה, המבוסס על ניסיון של עשור בליווי גופי ספורט לאומיים. שיווק ספורט שיודע לדבר גם עם המותג וגם עם הקהילה.</p>
-        <span class="tag">לסקטור הספורט</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ───────── Eco / Manifesto ───────── -->
-<section class="section" id="eco">
-  <div class="wrap">
-    <div class="manifesto reveal">
-      <div class="manifesto-inner">
-        <div class="num">05</div>
+    <div class="lectures-flagship reveal">
+      <div class="flagship-cover">
+        <span class="pill">הרצאת דגל · Most Booked</span>
         <div>
-          <div class="eyebrow" style="color:var(--paper); margin-bottom:18px">
-            <span class="line" style="background:var(--red)"></span>
-            <span>המודל המחקרי · האקו־סיסטם</span>
-          </div>
-          <h3>המודל המחקרי <em>שהופך</em> את המותג ל&ldquo;תרבות של שגרה&rdquo; בקהילה.</h3>
-          <p>הצגת המודל שפיתחתי בדוקטורט — כיצד שיווק ואסטרטגיה הופכים לכלי לשינוי חברתי. מהגברת השתתפות ילדות בספורט ועד שינוי פני הקהילה כולה.</p>
-          <p>קהל יעד: רשויות מקומיות, גופים ציבוריים ועמותות. השאיפה היא שכל מי שנכנס לאתר — ממנהל רווחה שמחפש הרצאה ועד ראש רשות שרוצה לשנות מציאות חברתית — ירגיש שהגעתי אליו באופן אישי.</p>
-          <div class="ribbon">
-            <span>רשויות מקומיות</span>
-            <span>גופים ציבוריים</span>
-            <span>עמותות</span>
-            <span>פרויקטים לאומיים</span>
-          </div>
+          <h3>״מי מפחד משיווק?״</h3>
+          <p class="sub">הצצה מפתיעה לעולם שמחליט בשבילנו, מבלי שנרגיש.</p>
         </div>
       </div>
+      <div class="flagship-body">
+        <div>
+          <h4>למה אנחנו קונים מה שאנחנו קונים?</h4>
+          <p>
+            הרצאה מרתקת וקלילה שפותחת את מאחורי הקלעים של עולם השיווק והצרכנות. דרך דוגמאות חכמות, מחקרים מסקרנים וסיפורים אמיתיים מהשטח — נבין איך פועל השיווק באמת, מה עומד מאחורי פרדוקס הבחירה, מיתוג רגשי ושיווק התנהגותי, ואיך אפשר לזהות את זה בזמן אמת.
+          </p>
+          <div class="flagship-tags">
+            <span>פרדוקס הבחירה</span>
+            <span>מיתוג רגשי</span>
+            <span>שיווק התנהגותי</span>
+            <span>פסיכולוגיה צרכנית</span>
+          </div>
+        </div>
+        <div style="margin-top:24px">
+          <a href="#contact" class="btn btn-primary">להזמנת ההרצאה <span class="btn-arrow"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="lectures-grid reveal" style="margin-top:48px">
+      <div class="topic-card">
+        <span class="num">02</span>
+        <h4>״למה קניתי את זה בכלל?״</h4>
+        <p>על פרדוקס הבחירה, מניפולציות שקטות והכוחות שמעצבים את ההחלטות שלנו.</p>
+      </div>
+      <div class="topic-card">
+        <span class="num">03</span>
+        <h4>״שיווק בלי פילטרים״</h4>
+        <p>איך מותגים נכנסים לנו ללב (ולכיס) — גם כשנדמה לנו שהם לא.</p>
+      </div>
+      <div class="topic-card">
+        <span class="num">04</span>
+        <h4>״הקופסה שמסביב למוצר״</h4>
+        <p>מסע קצר לעולם שבו לא מה שמוכרים קובע — אלא איך גורמים לנו להרגיש.</p>
+      </div>
+      <div class="topic-card">
+        <span class="num">05</span>
+        <h4>״מה גורם לנו לבחור?״</h4>
+        <p>סודות קטנים מהמדף, מהמוח ומהלב של הצרכנים.</p>
+      </div>
+      <div class="topic-card">
+        <span class="num">06</span>
+        <h4>״שיווק על הספה״</h4>
+        <p>מה קורה כשפסיכולוגיה, עיצוב ומיתוג נפגשים?</p>
+      </div>
+      <div class="topic-card">
+        <span class="num">07</span>
+        <h4>״איך גורמים לך להגיד כן?״</h4>
+        <p>כלים מעולם השכנוע, ההתנהגות הצרכנית והבחירה האנושית.</p>
+      </div>
+    </div>
+
+    <div class="lecture-cta-row reveal" style="margin-top:48px">
+      <div class="icon">+</div>
+      <p><b>סדנאות לצוותים וימי עיון.</b>בנייה אישית של תוכן, פורמט ואורך לפי המטרה — מוועדי עובדים ועד הנהלות.</p>
+      <a href="#contact" class="btn btn-ink">להתאמה אישית <span class="btn-arrow"></span></a>
     </div>
   </div>
 </section>
 
-<!-- ───────── Media ───────── -->
-<section class="section" id="media">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-tag">
-        <span class="num">06</span>
-        מהתקשורת
-      </div>
-      <h2 class="sec-title">מהתקשורת — <em>טור</em>, ראיון, במה.</h2>
-    </header>
+<!-- ─────────── CONSULTING ─────────── -->
+<section class="section" id="consulting">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-tag">ייעוץ וליווי אסטרטגי · Strategic Partnership</div>
+      <h2 class="section-title">שלוש זירות, <em>אסטרטגיה אחת</em>:<br>בידול ונוכחות משמעותית.</h2>
+    </div>
+    <p class="section-lede">
+      ליווי בריטיינר, פרויקטים נקודתיים, ויעוץ ארוך טווח — בהתאמה אישית לכל סגמנט.
+    </p>
+  </div>
 
-    <div class="media-grid reveal-stagger">
-      <a class="media-card" href="https://www.youtube.com/watch?v=4ojo-KijIcQ" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/4ojo-KijIcQ/hqdefault.jpg" alt="ראיון יוטיוב" loading="lazy" />
-        <div class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        <div class="overlay">
-          <span class="src">ראיון · יוטיוב</span>
-          <h4>שיווק, ספורט וערכים — שיחה מורחבת</h4>
+  <div class="consult-grid">
+    <article class="consult-card c-org reveal">
+      <span class="marker">01</span>
+      <header class="head">
+        <span class="seg">לארגונים וחברות</span>
+        <h3>זהות תאגידית ומדיניות שיווקית</h3>
+      </header>
+      <div class="body">
+        <p>ליווי בריטיינר לבניית זהות תאגידית עמוקה, אסטרטגיית מותג ארוכת טווח ומדיניות שיווקית רחבה.</p>
+        <ul>
+          <li>בניית ספר מותג ושפה תאגידית</li>
+          <li>אסטרטגיית שיווק שנתית ופריסה</li>
+          <li>ליווי הנהלות וצוותי שיווק</li>
+        </ul>
+        <a href="#contact" class="more">לפרטים נוספים <span class="btn-arrow"></span></a>
+      </div>
+    </article>
+
+    <article class="consult-card c-small reveal">
+      <span class="marker">02</span>
+      <header class="head">
+        <span class="seg">לעסקים קטנים</span>
+        <h3>״אסטרטגיה בזמן פציעות״</h3>
+      </header>
+      <div class="body">
+        <p>ליווי ממוקד לבעלי ובעלות עסק שמחפשים בידול ונוכחות אמיתית בשוק שמשתנה כל הזמן.</p>
+        <ul>
+          <li>חידוד הצעת ערך ובידול</li>
+          <li>מיפוי קהלים ומסרי ליבה</li>
+          <li>פעולות ראשונות ליישום מיידי</li>
+        </ul>
+        <a href="#contact" class="more">לפרטים נוספים <span class="btn-arrow"></span></a>
+      </div>
+    </article>
+
+    <article class="consult-card c-sport reveal">
+      <span class="marker">03</span>
+      <header class="head">
+        <span class="seg">ספורט · מאני־כושר · סטארטאפים</span>
+        <h3>מותגי ספורט וטכנולוגיה</h3>
+      </header>
+      <div class="body">
+        <p>ייעוץ מומחה למותגי ספורט וטכנולוגיה, מבוסס על ניסיון רב שנים בליווי גופי ספורט לאומיים.</p>
+        <ul>
+          <li>פוזיציה מותגית בשוק תחרותי</li>
+          <li>שותפויות עם גופי ספורט וקהילה</li>
+          <li>אסטרטגיית תוכן וקהל</li>
+        </ul>
+        <a href="#contact" class="more">לפרטים נוספים <span class="btn-arrow"></span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ─────────── ECOSYSTEM ─────────── -->
+<section class="section" id="ecosystem">
+  <div class="ecosystem-block reveal">
+    <div class="ecosystem-text">
+      <div class="section-tag">המודל המחקרי · Social Impact</div>
+      <h2>כשהשיווק הופך ל<em>תרבות של שגרה</em> בקהילה.</h2>
+      <p>
+        מודל ה<strong style="color:#fff;font-weight:700">אקו־סיסטם</strong> שפיתחתי בדוקטורט מציע מסגרת חדשה לשימוש בשיווק ובאסטרטגיה ככלי לשינוי חברתי — לא ככלי קמפיין חד פעמי, אלא כתרבות שמתחזקת את עצמה לאורך זמן בתוך הקהילה.
+      </p>
+      <p>
+        המודל יושם בהצלחה בהגברת השתתפות ילדות בספורט, ומתאים לרשויות מקומיות, גופים ציבוריים ועמותות שרוצות לראות שינוי שמתמיד.
+      </p>
+      <div class="ecosystem-targets">
+        <span>רשויות מקומיות</span>
+        <span>גופים ציבוריים</span>
+        <span>עמותות</span>
+        <span>פרויקטים לאומיים</span>
+      </div>
+      <a href="#contact" class="btn btn-primary">לפרויקט עם רשות <span class="btn-arrow"></span></a>
+    </div>
+
+    <div class="ecosystem-diagram" aria-hidden="true">
+      <div class="eco-ring r1"></div>
+      <div class="eco-ring r2"></div>
+      <div class="eco-ring r3"></div>
+      <div class="eco-center">מותג<br>חברתי</div>
+      <div class="eco-node n1">קהילה</div>
+      <div class="eco-node n2">חינוך</div>
+      <div class="eco-node n3">תקשורת</div>
+      <div class="eco-node n4">שייכות</div>
+      <div class="eco-node n5">שטח</div>
+      <div class="eco-node n6">מנהיגות</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── MEDIA ─────────── -->
+<section class="section-wide section-sand" id="media">
+  <div class="inner">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-tag">מהתקשורת · Press &amp; Media</div>
+        <h2 class="section-title">סיפורים שעלו <em>למסך</em>.</h2>
+      </div>
+      <p class="section-lede">
+        ראיונות וכתבות בערוצי הטלוויזיה ובאתרי החדשות המובילים בישראל.
+      </p>
+    </div>
+
+    <div class="media-grid reveal">
+      <a class="media-card" data-video="4ojo-KijIcQ" href="#" onclick="event.preventDefault();openVid('4ojo-KijIcQ')">
+        <div class="media-thumb">
+          <span class="src">YouTube</span>
+          <img src="https://i.ytimg.com/vi/4ojo-KijIcQ/hqdefault.jpg" alt="ראיון בערוץ יוטיוב" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </div>
+        <div class="media-meta">
+          <h4>ראיון על שיווק חברתי וספורט נשים</h4>
+          <span class="dur">YouTube · ראיון מורחב</span>
+        </div>
+      </a>
+
+      <a class="media-card" data-video="sKLj8ujDynw" href="#" onclick="event.preventDefault();openVid('sKLj8ujDynw')">
+        <div class="media-thumb">
+          <span class="src">YouTube</span>
+          <img src="https://i.ytimg.com/vi/sKLj8ujDynw/hqdefault.jpg" alt="ראיון בערוץ יוטיוב" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </div>
+        <div class="media-meta">
+          <h4>על אסטרטגיה ופרדוקס הבחירה</h4>
+          <span class="dur">YouTube · שיחה קצרה</span>
+        </div>
+      </a>
+
+      <a class="media-card" data-video="MmVwzelOpJg" href="#" onclick="event.preventDefault();openVid('MmVwzelOpJg')">
+        <div class="media-thumb">
+          <span class="src">YouTube</span>
+          <img src="https://i.ytimg.com/vi/MmVwzelOpJg/hqdefault.jpg" alt="ראיון בערוץ יוטיוב" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </div>
+        <div class="media-meta">
+          <h4>שיווק שמחבר אנשים לקהילות</h4>
+          <span class="dur">YouTube · ראיון</span>
         </div>
       </a>
 
       <a class="media-card" href="https://13tv.co.il/item/special/ono-academic-college/l7z8h-902826231/" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/sKLj8ujDynw/hqdefault.jpg" alt="ערוץ 13" loading="lazy" />
-        <div class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        <div class="overlay">
+        <div class="media-thumb">
           <span class="src">ערוץ 13</span>
-          <h4>מכללת אונו · כתבה מיוחדת</h4>
+          <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80" alt="ערוץ 13 - מכללת אונו" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </div>
+        <div class="media-meta">
+          <h4>כתבה במגזין ערוץ 13</h4>
+          <span class="dur">13tv.co.il · עמוד הכתבה</span>
         </div>
       </a>
 
       <a class="media-card" href="https://www.ynet.co.il/articles/0,7340,L-4631057,00.html" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/MmVwzelOpJg/hqdefault.jpg" alt="ynet" loading="lazy" />
-        <div class="overlay">
-          <span class="src">כתבה · ynet</span>
-          <h4>על שיווק, צרכנות ומה שמאחורי הבחירה</h4>
+        <div class="media-thumb">
+          <span class="src">Ynet</span>
+          <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80" alt="כתבה ב־Ynet" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
         </div>
-      </a>
-
-      <a class="media-card" href="https://www.youtube.com/watch?v=sKLj8ujDynw" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/sKLj8ujDynw/hqdefault.jpg" alt="YouTube" loading="lazy" />
-        <div class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        <div class="overlay">
-          <span class="src">יוטיוב</span>
-          <h4>הרצאה — מי מפחד משיווק?</h4>
-        </div>
-      </a>
-
-      <a class="media-card" href="https://www.youtube.com/watch?v=MmVwzelOpJg" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/MmVwzelOpJg/hqdefault.jpg" alt="YouTube" loading="lazy" />
-        <div class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        <div class="overlay">
-          <span class="src">יוטיוב</span>
-          <h4>שיווק על הספה</h4>
+        <div class="media-meta">
+          <h4>״אתנה״ — איך מקדמים ספורט נשים</h4>
+          <span class="dur">ynet.co.il · כתבה</span>
         </div>
       </a>
 
       <a class="media-card" href="https://www.one.co.il/VOD/Play/55320/" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/4ojo-KijIcQ/hqdefault.jpg" alt="ONE" loading="lazy" />
-        <div class="overlay">
-          <span class="src">ספורט · ONE</span>
-          <h4>אתנה — לוקחות פיקוד</h4>
+        <div class="media-thumb">
+          <span class="src">ONE</span>
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80" alt="כתבה ב־ONE" loading="lazy">
+          <span class="play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+        </div>
+        <div class="media-meta">
+          <h4>״אתנה — הולכות רחוק״</h4>
+          <span class="dur">one.co.il · כתבת VOD</span>
         </div>
       </a>
     </div>
+  </div>
+</section>
 
-    <div class="logos reveal" aria-label="לקוחות ושותפים">
-      <div class="logos-track">
-        <span class="logo-item">לפ״מ</span>
-        <span class="logo-item">אתנה</span>
-        <span class="logo-item">משרד התרבות והספורט</span>
-        <span class="logo-item">מכללת אונו האקדמית</span>
-        <span class="logo-item">עמותת ערכים בספורט</span>
-        <span class="logo-item">פרויקט שווים בספורט</span>
-        <span class="logo-item">לפ״מ</span>
-        <span class="logo-item">אתנה</span>
-        <span class="logo-item">משרד התרבות והספורט</span>
-        <span class="logo-item">מכללת אונו האקדמית</span>
-        <span class="logo-item">עמותת ערכים בספורט</span>
-        <span class="logo-item">פרויקט שווים בספורט</span>
-      </div>
-    </div>
-
-    <div class="testimonial reveal">
-      <blockquote>
-        ״טל לוקחת מהלך שיווקי <em>וממירה אותו</em> לסיפור חברתי שמדבר אל בני אדם — ואחרי שמיעה אחת, אי אפשר להסתכל על מותגים אותו דבר.״
-      </blockquote>
-      <div class="source">משתתפת בהרצאה · ועד עובדים, 2025</div>
+<!-- ─────────── LOGOS ─────────── -->
+<section class="logos-section">
+  <div class="logos-head reveal">
+    <div class="section-tag">הם בחרו לעבוד איתי</div>
+    <h3>גופים ציבוריים, פרויקטים לאומיים ואקדמיה.</h3>
+  </div>
+  <div class="logos-marquee">
+    <div class="logos-track">
+      <span class="logo-item">לפ״מ</span>
+      <span class="logo-item">אתנה</span>
+      <span class="logo-item">משרד התרבות והספורט</span>
+      <span class="logo-item">מכללת אונו</span>
+      <span class="logo-item">עמותת ערכים בספורט</span>
+      <span class="logo-item">פרויקט שווים בספורט</span>
+      <span class="logo-item">איגוד הרוגבי</span>
+      <span class="logo-item">לפ״מ</span>
+      <span class="logo-item">אתנה</span>
+      <span class="logo-item">משרד התרבות והספורט</span>
+      <span class="logo-item">מכללת אונו</span>
+      <span class="logo-item">עמותת ערכים בספורט</span>
+      <span class="logo-item">פרויקט שווים בספורט</span>
+      <span class="logo-item">איגוד הרוגבי</span>
     </div>
   </div>
 </section>
 
-<!-- ───────── Contact ───────── -->
+<!-- ─────────── TESTIMONIALS ─────────── -->
+<section class="section">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-tag">לקוחות מספרים · Voices</div>
+      <h2 class="section-title">״הרגשנו שהיא מדברת <em>אלינו</em>.״</h2>
+    </div>
+    <p class="section-lede">
+      ציטוטים מארגונים, רשויות וגופים שעבדו איתי.
+    </p>
+  </div>
+
+  <div class="testimonials-grid reveal">
+    <div class="testimonial">
+      <blockquote>הרצאה מצוינת, מרתקת ומעוררת השראה. טל הצליחה לחבר בין עולם האקדמיה לפרקטיקה בצורה חכמה ונגישה. מומלץ בחום.</blockquote>
+      <div class="who">
+        <div class="avatar">א</div>
+        <div class="info">
+          <div class="name">אורית כהן</div>
+          <div class="role">מנהלת רווחה · ארגון לאומי</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <blockquote>טל ליוותה אותנו בבניית האסטרטגיה, וההבדל בין לפני ואחרי היה דרמטי. היא רואה דברים שאחרים מפספסים.</blockquote>
+      <div class="who">
+        <div class="avatar">ר</div>
+        <div class="info">
+          <div class="name">רן לוי</div>
+          <div class="role">מנכ״ל · עמותת ספורט</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <blockquote>סדנה ייחודית שיצרה שיח חדש בצוות. הכלים שטל נתנה לנו שימושיים גם חודשים אחרי. תודה ענקית!</blockquote>
+      <div class="who">
+        <div class="avatar">מ</div>
+        <div class="info">
+          <div class="name">מיכל ברק</div>
+          <div class="role">סמנכ״לית משאבי אנוש · חברה בינלאומית</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <blockquote>טל הביאה את העומק האקדמי שחיפשנו, יחד עם נגישות וחיוך. לא קיבלתי הרצאה — קיבלתי מסע.</blockquote>
+      <div class="who">
+        <div class="avatar">ד</div>
+        <div class="info">
+          <div class="name">דנה אבן־דר</div>
+          <div class="role">ראש אגף · רשות מקומית</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CONTACT ─────────── -->
 <section class="section" id="contact">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-tag">
-        <span class="num">07</span>
-        צור קשר
+  <div class="contact-block reveal">
+    <div class="contact-info">
+      <div class="section-tag">צרו קשר · Get in Touch</div>
+      <h2>בואו נתחיל <em>שיחה</em>.</h2>
+      <p>
+        ספרו לי קצת מה אתם מחפשים — הרצאה, סדנה, ליווי או פרויקט עם רשות — ואחזור אליכם תוך 24 שעות עם הצעה מותאמת.
+      </p>
+
+      <div class="contact-channels">
+        <a href="https://wa.me/972500000000" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg></span>
+          <span class="label">וואטסאפ <small>למענה מהיר ביום העבודה</small></span>
+        </a>
+        <a href="mailto:hello@talar.co.il">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <span class="label">אימייל <small>hello@talar.co.il</small></span>
+        </a>
+        <a href="https://linktr.ee/Dr.Tal_Aloni_Rozen" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg></span>
+          <span class="label">אינסטגרם ולינקדאין <small>על הקישורים שלי</small></span>
+        </a>
       </div>
-      <h2 class="sec-title">כתבו לי. <em>תשובה</em> אישית — תוך 48 שעות.</h2>
-    </header>
-
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <p>תספרי לי על הארגון, הצוות, הפרויקט או הרעיון — ואחזור אלייך עם הצעה ממוקדת.</p>
-        <p style="font-size:1rem; color:var(--ink-soft); font-family:var(--sans)">השאיפה היא שכל מי שנכנס לאתר — ממנהל רווחה שמחפש הרצאה ועד ראש רשות שרוצה לשנות מציאות חברתית — ירגיש שהגעתי אליו באופן אישי.</p>
-
-        <div class="contact-channels">
-          <a class="channel" href="https://wa.me/972528544061" target="_blank" rel="noopener">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.6-1.5-.9-2.1-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.7 2.9 1.1 4.6 1.1 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-            </span>
-            <div>
-              <div class="label">וואטסאפ</div>
-              <div class="value">052-854-4061</div>
-            </div>
-          </a>
-
-          <a class="channel" href="https://www.linkedin.com/in/dr-tal-aloni-rozen-ph-d-a46278" target="_blank" rel="noopener">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V9.96H5.7v8.38h2.64zM7.02 8.81a1.53 1.53 0 100-3.06 1.53 1.53 0 000 3.06zm11.32 9.53v-4.59c0-2.46-1.31-3.6-3.06-3.6-1.41 0-2.04.78-2.4 1.32v-1.13H10.24c.04.74 0 8.38 0 8.38h2.64v-4.68c0-.24.02-.47.09-.65.18-.47.62-.96 1.34-.96.95 0 1.33.72 1.33 1.78v4.51h2.7z"/></svg>
-            </span>
-            <div>
-              <div class="label">לינקדאין</div>
-              <div class="value">ד״ר טל אלוני רוזן</div>
-            </div>
-          </a>
-
-          <a class="channel" href="https://www.instagram.com/dr.tal_aloni_rozen" target="_blank" rel="noopener">
-            <span class="icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.81.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.81.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.39C1.34 2.69.93 3.36.62 4.15c-.3.76-.5 1.64-.55 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.55 2.91.31.79.72 1.46 1.39 2.13.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.55C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.55.79-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.13.3-.76.5-1.64.55-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.55-2.91-.31-.79-.72-1.46-1.39-2.13-.67-.67-1.34-1.08-2.13-1.39-.76-.3-1.64-.5-2.91-.55C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
-            </span>
-            <div>
-              <div class="label">אינסטגרם</div>
-              <div class="value">@dr.tal_aloni_rozen</div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <form class="form reveal" id="contactForm" novalidate>
-        <div class="row2">
-          <div class="field">
-            <label for="f-name">שם מלא</label>
-            <input id="f-name" name="name" type="text" required placeholder="איך נקרא לך?" />
-          </div>
-          <div class="field">
-            <label for="f-org">ארגון / חברה</label>
-            <input id="f-org" name="org" type="text" placeholder="אופציונלי" />
-          </div>
-        </div>
-
-        <div class="row2">
-          <div class="field">
-            <label for="f-email">אימייל</label>
-            <input id="f-email" name="email" type="email" required placeholder="name@domain.com" dir="ltr" />
-          </div>
-          <div class="field">
-            <label for="f-phone">טלפון</label>
-            <input id="f-phone" name="phone" type="tel" placeholder="050-1234567" dir="ltr" />
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="f-interest">מה מעניין אותך?</label>
-          <select id="f-interest" name="interest" required>
-            <option value="">בחירה מהרשימה…</option>
-            <option value="lecture">הרצאה</option>
-            <option value="workshop">סדנה</option>
-            <option value="org">ליווי לארגון / חברה</option>
-            <option value="small">ייעוץ לעסק קטן</option>
-            <option value="muni">פרויקט לרשות מקומית / גוף ציבורי</option>
-            <option value="sport">ייעוץ לגוף ספורט / סטארטאפ</option>
-            <option value="other">משהו אחר</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="f-source">איך הגעת אליי? <span style="opacity:.6">(אופציונלי)</span></label>
-          <select id="f-source" name="source">
-            <option value="">בחירה…</option>
-            <option>חיפוש בגוגל</option>
-            <option>אינסטגרם</option>
-            <option>לינקדאין</option>
-            <option>חבר/ה / המלצה</option>
-            <option>הגעתי מהרצאה</option>
-            <option>תקשורת</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="f-msg">ספרי לי קצת</label>
-          <textarea id="f-msg" name="msg" placeholder="כמה מילים על מה שאת/ה מחפש/ת…"></textarea>
-        </div>
-
-        <div class="submit-row">
-          <span class="form-note">תשובה אישית תוך 48 שעות · השדות מסומנים בכוכבית הם חובה.</span>
-          <button class="btn btn-primary" type="submit">
-            שליחה
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M14 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-
-        <div id="formStatus" role="status" aria-live="polite" style="display:none; padding:14px 16px; background:var(--paper-soft); border-inline-start:3px solid var(--red); font-family:var(--italic); font-style:italic;"></div>
-      </form>
     </div>
+
+    <form class="contact-form" id="contactForm" onsubmit="return submitForm(event)">
+      <h3>השאירו פרטים, אחזור אליכם.</h3>
+      <p class="form-sub">כל השדות עוזרים לי לחזור אליכם עם הצעה רלוונטית באמת.</p>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="name">שם מלא</label>
+          <input type="text" id="name" name="name" required placeholder="ישראל ישראלי">
+        </div>
+        <div class="field">
+          <label for="phone">טלפון</label>
+          <input type="tel" id="phone" name="phone" required placeholder="050-0000000">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">אימייל</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com">
+      </div>
+
+      <div class="field">
+        <label for="interest">מה מעניין אתכם?</label>
+        <select id="interest" name="interest" required>
+          <option value="">— בחרו אופציה —</option>
+          <option>הרצאה</option>
+          <option>סדנה לצוות / יום עיון</option>
+          <option>ליווי לארגון</option>
+          <option>ייעוץ לעסק קטן</option>
+          <option>פרויקט לרשות מקומית</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="source">איך הגעתם אלי?</label>
+        <select id="source" name="source">
+          <option value="">— לא חובה —</option>
+          <option>אינסטגרם</option>
+          <option>לינקדאין</option>
+          <option>פייסבוק</option>
+          <option>חיפוש בגוגל</option>
+          <option>המלצה מאדם שאני מכירה</option>
+          <option>תקשורת (כתבה / ראיון)</option>
+          <option>אחר</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="msg">בכמה מילים — מה הכי חשוב לכם?</label>
+        <textarea id="msg" name="msg" placeholder="קהל היעד, התאריך המשוער, מה רציתם להשיג..."></textarea>
+      </div>
+
+      <button type="submit" class="submit">
+        שליחה
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      </button>
+      <p class="legal">בשליחת הטופס אתם מסכימים שאצור איתכם קשר. הפרטים נשמרים אצלי בלבד.</p>
+    </form>
   </div>
 </section>
 
-</main>
-
-<!-- ───────── Footer ───────── -->
+<!-- ─────────── FOOTER ─────────── -->
 <footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>ד״ר טל אלוני רוזן</h3>
-        <p style="margin:0; max-width: 38ch; color:#fbf3e7cc;">יועצת אסטרטגית לחברות ולעסקים · מרצה באקדמיה ולארגונים · חוקרת שיווק, שיווק ספורט והתנהגות צרכנים.</p>
-        <div class="sig">— מחברת בין אסטרטגיה לערכים.</div>
-      </div>
-      <div class="footer-col">
-        <h4>ניווט</h4>
-        <ul>
-          <li><a href="#about">אודות</a></li>
-          <li><a href="#lectures">הרצאות וסדנאות</a></li>
-          <li><a href="#consult">ייעוץ אסטרטגי</a></li>
-          <li><a href="#eco">המודל המחקרי</a></li>
-          <li><a href="#media">מהתקשורת</a></li>
-          <li><a href="#contact">צור קשר</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>נוכחות</h4>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/dr-tal-aloni-rozen-ph-d-a46278" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/dr.tal_aloni_rozen" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@dr.tal_aloni_rozen" target="_blank" rel="noopener">TikTok</a></li>
-          <li><a href="https://www.facebook.com/share/182jb6oNVF/" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://youtube.com/@talalonirozen4408" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="https://wa.me/972528544061" target="_blank" rel="noopener">WhatsApp</a></li>
-        </ul>
-      </div>
+  <div class="footer-row">
+    <div class="footer-brand">
+      <span class="name">ד״ר טל אלוני רוזן</span>
+      <p>מרצה, יועצת וחוקרת. דוקטור למנהל עסקים, התמחות בשיווק, ספורט וחברה. בונה גשרים בין אסטרטגיה לערכים, מאקדמיה למגרש.</p>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 ד״ר טל אלוני רוזן · כל הזכויות שמורות.</span>
-      <span>אתר ותיק: <a href="http://www.talar.co.il" target="_blank" rel="noopener">talar.co.il</a></span>
+    <div class="footer-col">
+      <h5>תפריט</h5>
+      <ul>
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#lectures">הרצאות וסדנאות</a></li>
+        <li><a href="#consulting">ייעוץ אסטרטגי</a></li>
+        <li><a href="#ecosystem">מודל האקו־סיסטם</a></li>
+        <li><a href="#media">מהתקשורת</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>קשר</h5>
+      <ul>
+        <li><a href="mailto:hello@talar.co.il">hello@talar.co.il</a></li>
+        <li><a href="https://wa.me/972500000000" target="_blank" rel="noopener">וואטסאפ</a></li>
+        <li><a href="https://linktr.ee/Dr.Tal_Aloni_Rozen" target="_blank" rel="noopener">אינסטגרם</a></li>
+        <li><a href="#contact">טופס פנייה</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© ד״ר טל אלוני רוזן · כל הזכויות שמורות.</span>
+    <div class="socials">
+      <a href="https://linktr.ee/Dr.Tal_Aloni_Rozen" target="_blank" rel="noopener" aria-label="לינקטרי">
+        <svg viewBox="0 0 24 24"><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.89h1.294v4.776c0 .486-.404.89-.89.89H6.577a.898.898 0 01-.89-.89V15.85H1.354c-.485 0-.89-.404-.89-.89v-2.193c0-.486.405-.89.89-.89h4.333V7.456c0-.486.404-.89.89-.89h2.768c.486 0 .89.404.89.89v4.42h4.422c.485 0 .89.405.89.89v2.193c0 .486-.405.89-.89.89H10.21l-2.257 1.217zM10.21 7.97l1.621-1.621c.324-.323.81-.323 1.134 0l1.621 1.621c.324.324.324.81 0 1.134l-1.62 1.621-1.135 1.135-1.62-1.621c-.324-.324-.324-.81 0-1.134z"/></svg>
+      </a>
+      <a href="https://wa.me/972500000000" target="_blank" rel="noopener" aria-label="וואטסאפ">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      </a>
+      <a href="mailto:hello@talar.co.il" aria-label="אימייל">
+        <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm10 9.4L21 7H3l9 6.4z"/></svg>
+      </a>
     </div>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/972528544061" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.5-.1-.1-.6-1.5-.9-2.1-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.3 1.2 4.7L2 22l5.4-1.4c1.4.7 2.9 1.1 4.6 1.1 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-  <span>שיחה בוואטסאפ</span>
+<!-- floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/972500000000?text=%D7%94%D7%99%D7%99+%D7%98%D7%9C%2C+%D7%94%D7%92%D7%A2%D7%AA%D7%99+%D7%9E%D7%94%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener" aria-label="פתחו צ׳אט בוואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
 </a>
 
+<!-- video lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeVid(event)">
+  <button class="close" onclick="closeVid(event)" aria-label="סגירה">×</button>
+  <iframe id="lbFrame" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
 <script>
-  // Mobile menu
-  const burger = document.getElementById('burger');
-  burger.addEventListener('click', () => {
+  // sticky nav border
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // mobile menu
+  const btn = document.getElementById('menuBtn');
+  const mm = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
     document.body.classList.toggle('menu-open');
-    const open = document.body.classList.contains('menu-open');
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  document.querySelectorAll('.mobile-menu a').forEach(a =>
-    a.addEventListener('click', () => document.body.classList.remove('menu-open'))
-  );
+  mm.addEventListener('click', e => {
+    if (e.target.tagName === 'A') document.body.classList.remove('menu-open');
+  });
 
-  // Scroll progress bar
-  const bar = document.getElementById('scrollBar');
-  const updateBar = () => {
-    const h = document.documentElement;
-    const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
-    bar.style.width = (scrolled * 100) + '%';
-  };
-  document.addEventListener('scroll', updateBar, { passive: true });
-  updateBar();
-
-  // Reveal on scroll
+  // reveal on scroll
   const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting){
-        e.target.classList.add('is-in');
-        io.unobserve(e.target);
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
       }
     });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
-  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+  }, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // CTA preselect on contact form
-  document.querySelectorAll('[data-cta]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const map = { lecture: 'lecture', consulting: 'org' };
-      const sel = document.getElementById('f-interest');
-      if (sel) sel.value = map[btn.dataset.cta] || '';
+  // lightbox
+  const lb = document.getElementById('lightbox');
+  const lbFrame = document.getElementById('lbFrame');
+  function openVid(id){
+    lbFrame.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeVid(e){
+    if (e && e.target.closest('iframe')) return;
+    lb.classList.remove('open');
+    lbFrame.src = '';
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-video]').forEach(el => {
+    el.addEventListener('click', e => {
+      const id = el.dataset.video;
+      if (id) { e.preventDefault(); openVid(id); }
     });
   });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVid(); });
 
-  // Form (front-end only)
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('formStatus');
-  form.addEventListener('submit', (e) => {
+  // form (no backend yet — opens WhatsApp pre-filled)
+  function submitForm(e){
     e.preventDefault();
-    const data = new FormData(form);
-    if (!data.get('name') || !data.get('email') || !data.get('interest')){
-      status.style.display = 'block';
-      status.style.borderColor = 'var(--red)';
-      status.textContent = 'נא למלא שם, אימייל ולבחור על מה לדבר.';
-      return;
-    }
-    status.style.display = 'block';
-    status.textContent = 'תודה ' + data.get('name') + '! ההודעה התקבלה — אחזור אלייך תוך 48 שעות.';
-    form.reset();
-  });
+    const f = e.target;
+    const data = Object.fromEntries(new FormData(f).entries());
+    const text =
+      `היי טל,%0A` +
+      `שמי ${encodeURIComponent(data.name||'')} ${encodeURIComponent(data.phone?'· '+data.phone:'')}.%0A` +
+      `אני מתעניינ/ת ב: ${encodeURIComponent(data.interest||'-')}.%0A` +
+      (data.source ? `(הגעתי דרך ${encodeURIComponent(data.source)}).%0A` : '') +
+      (data.msg ? `${encodeURIComponent(data.msg)}` : '');
+    window.open(`https://wa.me/972500000000?text=${text}`, '_blank');
+    return false;
+  }
 </script>
+
 </body>
 </html>
