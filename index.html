@@ -136,7 +136,7 @@ body.menu-open .menu-btn span::after{top:0;transform:rotate(-45deg)}
 .mobile-menu{
   position:fixed;inset:0;
   background:var(--paper);
-  padding:96px 28px 40px;
+  padding:80px 28px 32px;
   z-index:48;
   display:flex;flex-direction:column;gap:4px;
   visibility:hidden;opacity:0;
@@ -149,15 +149,15 @@ body.menu-open .mobile-menu{
   transition:opacity .3s var(--ease), visibility 0s linear 0s;
 }
 .mobile-menu a{
-  font-family:var(--display);
-  font-size:30px;
+  font-family:var(--sans);
+  font-size:18px;font-weight:600;
   color:var(--ink);
   padding:14px 0;
   border-bottom:1px solid var(--line);
 }
 .mobile-menu a:last-of-type{border-bottom:0}
 .mobile-menu .mobile-sub{
-  padding-inline-start:18px;font-size:18px;color:var(--ink-3);
+  padding-inline-start:18px;font-size:15px;color:var(--ink-3);
   font-family:var(--sans);font-weight:500;
 }
 .mobile-menu .wa-mobile{
